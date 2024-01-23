@@ -1,0 +1,177 @@
+ \documentclass[a4paper,11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{caption}
+%\usepackage{subcaption}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}{Lemma}
+
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\bt}{\begin{tabular}}
+\newcommand{\et}{\endattachment.ashx{tabular}}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+
+\newcommand{\bp}{\begin{pmatrix}}
+\newcommand{\ep}{\end{pmatrix}}
+
+\newcommand{\p}{\partial}
+\newcommand{\sech}{\mbox{sech}}
+\newcommand{\cf}{{\it cf.}~}
+\newcommand{\gnorm}[1]{\left|\left|#1\right|\right|}
+
+\title{Information Theoretic Discovery of Lagged Dynamic Mode Decomposition Models}
+\date{}
+\begin{document}
+\maketitle
+\section{Introduction}
+
+Equation free model development has enjoyed a years long stretch of continued progress by way of the evolution of dynamic mode decomposition (DMD) methods.  Beginning in the fluid dynamics community, DMD has moved out into almost every area of data driven science, and it has merged itself with every major trend in the data sciences as well, in particular machine learning based methods.  
+
+Naturally multi-scale and delay structured models reminiscent of statistical AR models have also been explored; see \cite{clainche,  ssdmd}.  
+
+In some sense then, this work is the natural generaliztion of something like the Aikake Information Criteria used to develop parsimonius ARIMA models in statistics.  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Entropic Regression DMD}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The results in this work are a marriage between the higher-order DMD of \cite{clainche}, and the entropic regression technique for network detection and model construction found in \cite{bollt, bollt2}.  We now briefly explain both results, and then we show how to bring them together in order to build accurate, yet minimal time lag models.     
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Higher Order DMD}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Originally presented in \cite{clainche}, though see also the HAVOK method in , we generalize the results of \cite{clainche} so as to keep each lagged model separate, causal, and formulated over an arbitrary of not necessarily unit incremement lags.  We suppose that we have the maximum lag of $d$ time steps.  We likewise suppose that we have the choice of say $N_{l}$ lags as ${\bf l}_{c}=(l_{1}, l_{2}, \cdots, l_{k}, \cdots, l_{N_{l}})$, with $1=l_{1} < l_{j} < l_{j+1} < l_{N_{L}}\leq d$.  Given times series $\left\{{\bf y}_{j}\right\}_{j=0}^{N_{T}}$, we then define the matrices 
+\[
+{\bf Y}_{+,d} = \left({\bf y}_{d} \cdots {\bf y}_{N_{T}}\right), ~ {\bf Y}_{-} = \left({\bf y}_{0} \cdots {\bf y}_{N_{T}-1}\right), ~ {\bf y}_{j}\in\mathbb{R}^{s},
+\]  
+and the $s\times (N_{T}-d+1)$ shifted mask matrices ${\bf M}_{l}$ where
+\[
+\left({\bf M}_{l}\right)_{mn} = \left\{
+\ba{rl}
+0 & m-1 < d-l, ~ m-1 > N_{T} - l\\
+1 & n=m, ~ d-l\leq m-1 \leq N_{T} - l\\
+0 & n\neq m, ~ d-l\leq m-1 \leq N_{T} - l
+\ea
+\right.
+\]
+
+An arbitrary lagged DMD model can then be written as 
+\[
+{\bf Y}_{+,d} = \sum_{k=1}^{N_{L}}{\bf K}_{l_{k}}{\bf Y}_{-}{\bf M}_{l_{k}}
+\]
+where we note that each matrix ${\bf K}_{l_{k}}$ is $s\times s$.  Using our standard optimization arguments, we can find each matrix ${\bf K}_{l_{j}}$ via the critical-point equation
+\[
+\sum_{k=1}^{N_{L}}{\bf K}_{l_{k}}{\bf Y}_{-}{\bf M}_{l_{k}}{\bf M}_{l_{j}}^{T}{\bf Y}_{-}^{T} = {\bf Y}_{+,d}{\bf M}_{l_{j}}^{T}{\bf Y}_{-}^{T}.
+\]
+Combining these terms across lags leads to the system 
+\[
+{\bf K}({\bf l}_{c}) {\bf Y}_{-}({\bf l}_{c}){\bf Y}_{-}({\bf l}_{c})^{T} = {\bf Y}_{+, d}{\bf Y}_{-}({\bf l}_{c})^{T}.
+\]
+where
+\[
+{\bf K}({\bf l}_{c}) = \left({\bf K}_{l_{N_{L}}} {\bf K}_{l_{N_{L}-1}} \cdots {\bf K}_{1}\right), 
+\]
+and
+\[
+{\bf Y}_{-}({\bf l}_{c}) = \begin{pmatrix} {\bf Y}_{-}{\bf M}_{l_{N_{L}}} \\ {\bf Y}_{-}{\bf M}_{l_{N_{L}}-1} \\ \vdots \\ {\bf Y}_{-}{\bf M}_{1} \end{pmatrix}.
+\]
+Note, in \cite{clainche}, models with distinct matrices ${\bf K}_{l_{j}}$ for each lag were eschewed for something much closer to what is now called Hankel DMD.  While effective, and in several respects simpler, such an approach does not as readily allow for more thoughtful model selection as we explain in the next section.  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Determining Causality through Information Theory and Entropic Regression}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Given two time series, say $\left\{X_{j}\right\}_{j=1}^{N_{T}}$ and $\left\{Y_{j}\right\}_{j=1}^{N_{T}}$, it is a foundational question to determine if one time series {\it causes} the other.  Said another way, can we find quantitative methods which determine how one time series might drive or ultimately explain the behavior of another?  
+
+Motivated by the now celebrated {\it Granger causality} test, \cf \cite{granger}, in linear time series, \cite{schreiber} introduced the notion of {\it transfer entropy} to determine the causal relationship between two nonlienar time series.  The transfer entropy from $X_{j}$ to $Y_{j}$, say $T_{X\rightarrow Y}(j)$ is defined in \cite{schreiber} to be 
+\[
+T_{X\rightarrow Y}(j) = I(Y_{j+1},Y_{j}) - I(Y_{j+1},Y_{j}|X_{j}),  
+\]
+where $I(,)$ is the mutual information between two random variables and $I(Y_{j+1},Y_{j}|X_{j})$ measures the conditional mutual information with conditioning over $X_{j}$.  Note, if $Y_{j+1}$ is independent of $X_{j}$, then $I(Y_{j+1},Y_{j}|X_{j}) = I(Y_{j+1},Y_{j})$ so that $T_{X\rightarrow Y}(j) = 0$.  
+
+This initial concept of transfer entropy has given rise to a host of modifications and improvements, see in particular \cite{faes} and \cite{bollt}, which has ultimately lead to sophisticated software libraries being developed which can determine networks of interactions between time series that accurately account for confounding variables and non-Markovian influences of past states.  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Entropic-Regression-Dynamic-Mode Decomposition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Thus, we can see how the ER approach can be used to enhance the  HODMD.  We again suppose that the time dynamics is modeled with at most $d-$lags as 
+\[
+{\bf y}_{j+d} = \sum_{l=1}^{d}{\bf K}_{l}{\bf y}_{j+d-l}, 
+\]
+where ${\bf K}_{l}$ is $s \times s$ matrix describing the appropriate lag effect.  To choose the appropriate lags in HODMD, we adapt the method of {\it entropic-regression} from \cite{bollt2}.  This begins with finding the one lag matrix ${\bf K}_{1}$.  We then define the choice of lag matrices, say ${\bf K}_{c}$ as ${\bf K}_{1}$ and the lag choices via the vector ${\bf l}_{c}=(1)$.  We then:
+\begin{enumerate}
+\item [\textbf{Build}]
+\item Given ${\bf l}_{c}=(1~l_{1} \cdots l_{j})$ and ${\bf K}({\bf l}_{c})$, define 
+\end{enumerate}
+We then look for a lag $l_{\ast}>1$ and corresponding matrices ${\bf K}_{1}$ and ${\bf K}_{l_{\ast}}$ such that 
+\[
+1, l_{\ast}, ~ {\bf K}_{1}, ~{\bf K}_{l_{\ast}} = \text{arg max}_{2\leq l \leq d} I\left({\bf y}(t_{j+l}), {\bf K}_{1}{\bf y}(t_{j+l-1}) + {\bf K}_{l}{\bf s}(t_{j})|{\bf K}_{p}{\bf y}(t_{j+l-1})\right).
+\]
+If the corresponding information is statistically significant (assessed through a straightforward hypothesis test), then we include the lag and corresponding lag matrix in our HODMD.  This process is repeated until there are no remaining significant lags.  In turn then, we test whether each included lag is still signficant if it is ignored so that we prune our initial list of chosen lags.  As in \cite{bollt}, this process creates a set of lags which removes intermediate or confounding stastical relationships, producing the most meaningful list of essentially causitive lags within our HODMD framework.  We label this method the Entropic-Regression DMD (ERDMD).  The details of the algorithm are explained in the Appendix.  
+
+Again, collecting the EWT scales into the vector ${\bf s}(t)$, our HODMD model is trying to determine those lags to use in the $d-$lag model 
+\[
+{\bf s}\left(t_{j+d}\right) = \sum_{l=1}^{d}{\bf K}_{l}{\bf s}\left(t_{j+d-l}\right), 
+\]
+where $d$ is a maximum value chosen by the user. We suppose that our sampled time series is given by $\left\{{\bf s}_{j}\right\}_{j=0}^{N_{T}}$ where ${\bf s}_{j}={\bf s}(t_{j})$.  To begin the ER-DMD algorithm, we first find
+\[
+{\bf K}_{1} = \text{arg min}_{\bf K}\gnorm{{\bf S}^{+}_{1}-{\bf K}{\bf S}^{-}_{1,1}}_{F}
+\]
+where for lag $l$ we define the matrices ${\bf S}^{-}_{j,l}$ and ${\bf S}^{+}_{j}$ to be
+\[
+{\bf S}^{-}_{j,k} = \left( {\bf s}_{j-k} ~ {\bf s}_{j-k+1} ~ \cdots {\bf s}_{N_{T}-k} \right), ~ {\bf S}^{+}_{j} = \left( {\bf s}_{j} ~ {\bf s}_{j+1} ~ \cdots {\bf s}_{N_{T}} \right),
+\] 
+and where $\gnorm{\cdot}_{F}$ is the Frobenius norm.  Taking a greedy-algorithm approach, we then fix ${\bf K}_{1}$ in all subsequent computations.  
+
+At the next step, we then find any given next choice for a lag matrix ${\bf K}_{l}$ for $2\leq l \leq d$ via 
+\[
+{\bf K}_{l} = \text{arg min}_{{\bf K}}\gnorm{{\bf S}^{+}_{l}-{\bf K}_{1}{\bf S}^{-}_{l,1}-{\bf K}{\bf S}^{-}_{l,l}}_{F}
+\]
+Defining $I_{l}$ such that 
+\[
+I_{l} = I\left.\left({\bf S}^{+}_{l}, {\bf K}_{1}{\bf S}^{-}_{l,1} + 
+{\bf K}_{l}{\bf S}^{-}_{l,l}\right| {\bf K}_{1}{\bf S}^{-}_{l,1} \right),
+\]
+we find $I_{l_{\ast}} = \max_{2\leq l \leq d}I_{l}$ and then test if $I_{l_{\ast}}>0$ using a hypothesis test based off of building null distributions using random shuffles of the time series.   
+
+Proceeding in this way, where we note that we fix each chosen lag matrix ${\bf K}_{l_{j}}$ before proceeding to find the next one, we can build a list of proposed lags, say $\ell_{pr} = (1, l_{1}, \cdots, l_{c})$, and corresponding lag matrices ${\bf K}_{l_{j}}$, which we order such that $1<l_{j}<l_{j+1}\leq d$.  That said, building off the theorems and algorithms in \cite{bollt} and \cite{bollt2}, we also need to potentially prune our proposed lag list.  To that end, we define $I_{\ell_{pr}\backslash l_{k}}$ where 
+\[
+I_{\ell_{pr}\backslash l_{j}} = I\left.\left({\bf S}^{+}_{d}, \sum_{j}{\bf K}_{l_{j}}{\bf S}^{-}_{d,l_{j}} \right| \sum_{j\neq k}{\bf K}_{l_{j}}{\bf S}^{-}_{d,l_{j}} \right).
+\]
+We then find $\tilde{I}_{j_{\ast}} = \min_{j}I_{\ell_{pr}\backslash l_{j}}$.  If $\tilde{I}_{j}$ is not greater than zero in a statistical sense, then $l_{j_{\ast}}$ and its corresponding matrix ${\bf K}_{l_{j_{\ast}}}$ are pruned.  This process is then repeated until there are no lags remaining or all lags are statistically significant.  
+
+\bibliographystyle{unsrt}
+\bibliography{ionosphere_bib}
+\end{document}
