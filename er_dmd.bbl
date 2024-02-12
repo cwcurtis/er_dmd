@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{clainche}
+Soledad Le~Clainche and Jos\'{e}~M. Vega.
+\newblock Higher order dynamic mode decomposition.
+\newblock {\em SIAM Journal on Applied Dynamical Systems}, 16(2):882--925,
+  2017.
+
 \bibitem{ssdmd}
 Daniel~J. Alford-Lago, Christopher~W. Curtis, Alexander~T. Ihler, and
   Katherine~A. Zawdie.
@@ -7,37 +13,27 @@ Daniel~J. Alford-Lago, Christopher~W. Curtis, Alexander~T. Ihler, and
   forecasting.
 \newblock {\em Radio Science}, 58(8):e2022RS007637, 2023.
 
-\bibitem{materassi1}
-Giuseppe Consolini and Massimo Materassi.
-\newblock Chapter 16 - advanced statistical tools in the near-earth space
-  science.
-\newblock In Massimo Materassi, Biagio Forte, Anthea~J. Coster, and Susan
-  Skone, editors, {\em The Dynamical Ionosphere}, pages 243--256. Elsevier,
-  2020.
+\bibitem{bollt}
+Jie Sun, Dane Taylor, and Erik~M. Bollt.
+\newblock Causal network inference by optimal causation entropy.
+\newblock {\em SIAM Journal on Applied Dynamical Systems}, 14(1):73--106, 2015.
 
-\bibitem{materassi2}
-Massimo Materassi, Tommaso Alberti, Yenca Migoya-Orué, Sandro~Maria Radicella,
-  and Giuseppe Consolini.
-\newblock Chaos and predictability in ionospheric time series.
-\newblock {\em Entropy}, 25(2), 2023.
+\bibitem{bollt2}
+A.~A.~R. AlMomani, Jie Sun, and Erik~M. Bollt.
+\newblock How entropic regression beats the outliers problem in nonlinear
+  system identification.
+\newblock {\em Chaos}, 30:013107, 2020.
 
-\bibitem{gilles}
-Jérôme Gilles.
-\newblock Empirical wavelet transform.
-\newblock {\em IEEE Transactions on Signal Processing}, 61(16):3999--4010,
-  2013.
+\bibitem{brunton_havok}
+S.L. Brunton, B.W. Brunton, J.L. Proctor, , E.~Kaiser, and J.N. Kutz.
+\newblock Chaos as an intermittently forced linear system.
+\newblock {\em Nature Comm.}, 8, 2017.
 
-\bibitem{schreiber}
-Thomas Schreiber.
-\newblock Measuring information transfer.
-\newblock {\em Phys. Rev. Lett.}, 85:461--464, Jul 2000.
-
-\bibitem{idtxl}
-Patricia Wollstadt, Joseph~T. Lizier, Raul Vicente, Conor Finn, Mario
-  Martinez-Zarzuela, Pedro Mediano, Leonardo Novelli, and Michael Wibral.
-\newblock Idtxl: The information dynamics toolkit xl: a python package for the
-  efficient analysis of multivariate information dynamics in networks.
-\newblock {\em Journal of Open Source Software}, 4(34):1081, 2019.
+\bibitem{arbabi}
+H.~Arbabi and I.~Mezic.
+\newblock Ergodic theory, dynamic mode decomposition, and computation of
+  spectral properties of the {K}oopman operator.
+\newblock {\em SIAM Appl. Dyn. Sys.}, 16:2096--2126, 2017.
 
 \bibitem{granger}
 C.~W.~J. Granger.
@@ -45,34 +41,37 @@ C.~W.~J. Granger.
   cross-spectral methods.
 \newblock {\em Econometrica}, 37(3):424--438, 1969.
 
+\bibitem{schreiber}
+Thomas Schreiber.
+\newblock Measuring information transfer.
+\newblock {\em Phys. Rev. Lett.}, 85:461--464, Jul 2000.
+
 \bibitem{faes}
 Luca Faes, Giandomenico Nollo, and Alberto Porta.
 \newblock Information-based detection of nonlinear granger causality in
   multivariate processes via a nonuniform embedding technique.
 \newblock {\em Phys. Rev. E}, 83:051112, May 2011.
 
-\bibitem{bollt}
-Jie Sun, Dane Taylor, and Erik~M. Bollt.
-\newblock Causal network inference by optimal causation entropy.
-\newblock {\em SIAM Journal on Applied Dynamical Systems}, 14(1):73--106, 2015.
+\bibitem{robinson}
+J.C. Robinson.
+\newblock {\em Infinite Dimensional Dynamical Systems}.
+\newblock Cambridge University Press, Cambridge, UK, 2001.
 
-\bibitem{idtxl2}
-Leonardo Novelli, Patricia Wollstadt, Pedro Mediano, Michael Wibral, and
-  Joseph~T. Lizier.
-\newblock {Large-scale directed network inference with multivariate transfer
-  entropy and hierarchical statistical testing}.
-\newblock {\em Network Neuroscience}, 3(3):827--847, 2019.
+\bibitem{citanovic}
+N.~B. Budanur, P.~Cvitanovi\ifmmode~\acute{c}\else \'{c}\fi{}, R.~L.
+  Davidchack, and E.~Siminos.
+\newblock Reduction of so(2) symmetry for spatially extended dynamical systems.
+\newblock {\em Phys. Rev. Lett.}, 114:084102, Feb 2015.
 
-\bibitem{clainche}
-Soledad Le~Clainche and Jos\'{e}~M. Vega.
-\newblock Higher order dynamic mode decomposition.
-\newblock {\em SIAM Journal on Applied Dynamical Systems}, 16(2):882--925,
-  2017.
+\bibitem{kassam}
+AK~Kassam and L.N. Trefethen.
+\newblock Fourth-order time-stepping for stiff {PDE}s.
+\newblock {\em SIAM J. Sci. Comp.}, 26:1214--1233, 2005.
 
-\bibitem{bollt2}
-A.~A.~R. AlMomani, Jie Sun, and Erik~M. Bollt.
-\newblock How entropic regression beats the outliers problem in nonlinear
-  system identification.
-\newblock {\em Chaos}, 30:013107, 2020.
+\bibitem{berkooz}
+G.~Berkooz, P.~Holmes, J.L. Lumley, and C.W. Rowley.
+\newblock {\em Turbulence, Coherent Structures, Dynamical Systems, and
+  Symmetry}.
+\newblock Cambridge University Press, Cambridge, UK, 2012.
 
 \end{thebibliography}

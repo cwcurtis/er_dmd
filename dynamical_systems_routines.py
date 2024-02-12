@@ -86,7 +86,7 @@ def generate_rossler(x1min, x1max, x2min, x2max,
                    desc="Generating Rossler system data...", ncols=100):
         data_mat[ii, :, 0] = np.array([icond1[ii], icond2[ii], icond3[ii]], dtype=np.float64)
         for jj in range(num_steps):
-            data_mat[ii, :, jj+1] = rk4(data_mat[ii, :, jj], dt, lorenz63)
+            data_mat[ii, :, jj+1] = rk4(data_mat[ii, :, jj], dt, rossler)
     return data_mat
 
 def generate_lorenz63(x1min, x1max, x2min, x2max, 
