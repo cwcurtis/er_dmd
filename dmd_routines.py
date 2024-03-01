@@ -19,11 +19,11 @@ def dmd_cmp(gm, gp, thrshhld):
 
     return kmat
 
-def lagged_model_cmp(ydata, kmats, lags, mxlag):
+def lagged_model_cmp(ydata, kmats, lags, mxlag, finstps):
     pdim, nsteps = ydata.shape    
-    model = np.zeros((pdim, nsteps), dtype=np.float64)
+    model = np.zeros((pdim, finstps), dtype=np.float64)
     model[:, :mxlag] = ydata[:, :mxlag]
-    for jj in range(nsteps-mxlag):
+    for jj in range(finstps-mxlag):
         tstep = jj + mxlag
         for cnt, lag in enumerate(lags[::-1]):
             if pdim > 1:
@@ -43,28 +43,43 @@ def lagged_dmd_cmp(ydata,lags):
     kmats = kmatstmp[0].T     
     return kmats
 
-def evals_computer(kmats, lags):
+def evals_computer_symbolic(kmats, lags):
     z = symbols('z')
     
     pdim, ntots = np.shape(kmats)
     ktot = Matrix(np.zeros((pdim, pdim)))
     mxlag = lags[-1]
-    norms = np.zeros(len(lags))
     for cnt, lag in enumerate(lags[::-1]):
-        norms[cnt] = np.linalg.norm(kmats[:, pdim*cnt:pdim*(cnt+1)])
         ktot += Matrix(kmats[:, pdim*cnt:pdim*(cnt+1)]) * z**(mxlag-lag)        
     ktot -= (z**mxlag)*eye(pdim)
-    print(norms)
     print("Matrix Built")
     charfun = Poly(ktot.det(), z)    
     print("Determinant computed")
     evals = np.roots(charfun.all_coeffs()[::-1])
     return evals
 
+def evals_computer(kmats, lags):
+    pdim = kmats.shape[0]
+    mx_lag = lags[-1]
+    full_dim = pdim*mx_lag
+
+    full_kmat = np.zeros((full_dim, full_dim))
+    my_eye = np.eye(pdim)
+    
+    for jj in range(mx_lag):
+        if jj < mx_lag-1:
+            full_kmat[jj*pdim:(jj+1)*pdim, (jj+1)*pdim:(jj+2)*pdim] = my_eye
+        else:
+            for cnt, lag in enumerate(lags[::-1]):
+                full_kmat[jj*pdim:(jj+1)*pdim, (mx_lag - lag)*pdim:(mx_lag - lag + 1)*pdim] = kmats[:, cnt*pdim:(cnt+1)*pdim]
+    return np.linalg.eig(full_kmat)
+
+
 def it_dmd(max_lag, ydata):
     # ground expectation
     thrshhld = 15
     knghbr = 3
+    pdim, nsteps = ydata.shape
     kmatl = dmd_cmp(ydata[:, :-1], ydata[:, 1:], thrshhld)
 
     kmats = kmatl
@@ -79,11 +94,11 @@ def it_dmd(max_lag, ydata):
         triggered = False
         for lcnt, lag in enumerate(remaining_lags):            
             #xvals = ydata[:, lag:]                                    
-            zvals = lagged_model_cmp(ydata, kmats, chosen_lags, max_lag)                
+            zvals = lagged_model_cmp(ydata, kmats, chosen_lags, max_lag, nsteps)                
             prop_lags = sorted(chosen_lags + [lag])
             kmats_prop = lagged_dmd_cmp(ydata, prop_lags)
             
-            yvals = lagged_model_cmp(ydata, kmats_prop, prop_lags, max_lag)
+            yvals = lagged_model_cmp(ydata, kmats_prop, prop_lags, max_lag, nsteps)
             cmi = kmc.cmiknn(xvals.T, yvals[:, max_lag:].T, zvals[:, max_lag:].T, knghbr)
             if cmi > cmi_max:
                 cmi_max = cmi
@@ -116,7 +131,7 @@ def it_dmd(max_lag, ydata):
     # backward prune
     if len(chosen_lags) > 2:
      
-        yvalsmin = lagged_model_cmp(ydata, kmats, chosen_lags, chosen_lags[-1])
+        yvalsmin = lagged_model_cmp(ydata, kmats, chosen_lags, chosen_lags[-1], nsteps)
         while not(significant):
             xvalsmin = ydata[:, chosen_lags[-1]:]        
             cmi_min = 1e6
@@ -124,7 +139,7 @@ def it_dmd(max_lag, ydata):
                 
                 prop_lags = chosen_lags[:cnt+1] + chosen_lags[cnt+2:]
                 kmats_prop = lagged_dmd_cmp(ydata, prop_lags)
-                zvals = lagged_model_cmp(ydata, kmats_prop, prop_lags, chosen_lags[-1])
+                zvals = lagged_model_cmp(ydata, kmats_prop, prop_lags, chosen_lags[-1], nsteps)
                 cmi = kmc.cmiknn(xvalsmin.T, yvalsmin[:, chosen_lags[-1]:].T, zvals[:, chosen_lags[-1]:].T, knghbr)                
                 if cmi < cmi_min:
                     cmi_min = cmi
