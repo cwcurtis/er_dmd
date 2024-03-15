@@ -1,33 +1,27 @@
 \begin{thebibliography}{10}
 
-\bibitem{clainche}
-Soledad Le~Clainche and Jos\'{e}~M. Vega.
-\newblock Higher order dynamic mode decomposition.
-\newblock {\em SIAM Journal on Applied Dynamical Systems}, 16(2):882--925,
-  2017.
+\bibitem{taira}
+K.~Taira, S.L. Brunton, S.T.M. Dawson, C.W. Rowley, T.~Colonius, B.J. McKeon,
+  O.T. Schmidt, S.~Gordeyev, V.~Theofilis, and L.S. Ukeiley.
+\newblock Modal analysis of fluid flows: An overview.
+\newblock {\em AIAA}, 55:4013--4041, 2017.
 
-\bibitem{ssdmd}
-Daniel~J. Alford-Lago, Christopher~W. Curtis, Alexander~T. Ihler, and
-  Katherine~A. Zawdie.
-\newblock Scale-separated dynamic mode decomposition and ionospheric
-  forecasting.
-\newblock {\em Radio Science}, 58(8):e2022RS007637, 2023.
+\bibitem{lusch}
+B.~Lusch, J.~N. Kutz, and S.~L. Brunton.
+\newblock Deep learning for universal linear embeddings of nonlinear dynamics.
+\newblock {\em Nature Comm.}, 9:4950, 2018.
 
-\bibitem{bollt}
-Jie Sun, Dane Taylor, and Erik~M. Bollt.
-\newblock Causal network inference by optimal causation entropy.
-\newblock {\em SIAM Journal on Applied Dynamical Systems}, 14(1):73--106, 2015.
+\bibitem{azencot}
+O.~Azencot, N.~B. Erichson, V.~Lin, and M.~Mahoney.
+\newblock Forecasting sequential data using consistent koopman autoencoders.
+\newblock In Hal~Daumé III and Aarti Singh, editors, {\em Proceedings of the
+  37th International Conference on Machine Learning}, volume 119 of {\em
+  Proceedings of Machine Learning Research}, pages 475--485. PMLR, 2020.
 
-\bibitem{bollt2}
-A.~A.~R. AlMomani, Jie Sun, and Erik~M. Bollt.
-\newblock How entropic regression beats the outliers problem in nonlinear
-  system identification.
-\newblock {\em Chaos}, 30:013107, 2020.
-
-\bibitem{brunton_havok}
-S.L. Brunton, B.W. Brunton, J.L. Proctor, , E.~Kaiser, and J.N. Kutz.
-\newblock Chaos as an intermittently forced linear system.
-\newblock {\em Nature Comm.}, 8, 2017.
+\bibitem{lago_dldmd}
+D.~J. Alford-Lago, C.~W. Curtis, A.~T. Ihler, and O.~Issan.
+\newblock Deep learning enhanced dynamic mode decomposition.
+\newblock {\em Chaos}, 32:033116, 2022.
 
 \bibitem{arbabi}
 H.~Arbabi and I.~Mezic.
@@ -35,16 +29,69 @@ H.~Arbabi and I.~Mezic.
   spectral properties of the {K}oopman operator.
 \newblock {\em SIAM Appl. Dyn. Sys.}, 16:2096--2126, 2017.
 
-\bibitem{granger}
-C.~W.~J. Granger.
-\newblock Investigating causal relations by econometric models and
-  cross-spectral methods.
-\newblock {\em Econometrica}, 37(3):424--438, 1969.
+\bibitem{clainche}
+Soledad Le~Clainche and Jos\'{e}~M. Vega.
+\newblock Higher order dynamic mode decomposition.
+\newblock {\em SIAM Journal on Applied Dynamical Systems}, 16(2):882--925,
+  2017.
+
+\bibitem{duraisamy}
+Shaowu Pan and Karthik Duraisamy.
+\newblock {On the structure of time-delay embedding in linear models of
+  non-linear dynamical systems}.
+\newblock {\em Chaos: An Interdisciplinary Journal of Nonlinear Science},
+  30(7):073135, 07 2020.
+
+\bibitem{champion2}
+Kathleen~P. Champion, Steven~L. Brunton, and J.~Nathan Kutz.
+\newblock Discovery of nonlinear multiscale systems: Sampling strategies and
+  embeddings.
+\newblock {\em SIAM Journal on Applied Dynamical Systems}, 18(1):312--333,
+  2019.
+
+\bibitem{kutz4}
+Mason Kamb, Eurika Kaiser, Steven~L. Brunton, and J.~Nathan Kutz.
+\newblock Time-delay observables for koopman: Theory and applications.
+\newblock {\em SIAM Journal on Applied Dynamical Systems}, 19(2):886--917,
+  2020.
+
+\bibitem{curtis_dldmd}
+Christopher~W. Curtis, D.~Jay Alford-Lago, Erik Bollt, and Andrew Tuma.
+\newblock {Machine learning enhanced Hankel dynamic-mode decomposition}.
+\newblock {\em Chaos: An Interdisciplinary Journal of Nonlinear Science},
+  33(8):083133, 08 2023.
+
+\bibitem{bollt2}
+A.~A.~R. AlMomani, Jie Sun, and Erik~M. Bollt.
+\newblock How entropic regression beats the outliers problem in nonlinear
+  system identification.
+\newblock {\em Chaos}, 30:013107, 2020.
 
 \bibitem{schreiber}
 Thomas Schreiber.
 \newblock Measuring information transfer.
 \newblock {\em Phys. Rev. Lett.}, 85:461--464, Jul 2000.
+
+\bibitem{bollt}
+Jie Sun, Dane Taylor, and Erik~M. Bollt.
+\newblock Causal network inference by optimal causation entropy.
+\newblock {\em SIAM Journal on Applied Dynamical Systems}, 14(1):73--106, 2015.
+
+\bibitem{aikake}
+Akaike Hirotogu.
+\newblock A new look at the statistical model identification.
+\newblock {\em IEEE Transactions on Automatic Control}, 19:716--723, 1974.
+
+\bibitem{brunton_havok}
+S.L. Brunton, B.W. Brunton, J.L. Proctor, , E.~Kaiser, and J.N. Kutz.
+\newblock Chaos as an intermittently forced linear system.
+\newblock {\em Nature Comm.}, 8, 2017.
+
+\bibitem{granger}
+C.~W.~J. Granger.
+\newblock Investigating causal relations by econometric models and
+  cross-spectral methods.
+\newblock {\em Econometrica}, 37(3):424--438, 1969.
 
 \bibitem{faes}
 Luca Faes, Giandomenico Nollo, and Alberto Porta.
