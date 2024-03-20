@@ -173,6 +173,10 @@ where ${\bf K}_{l}$ is $s \times s$ matrix describing the appropriate lag effect
 \item We then further build these lists through finding those laged models which provide the most information relative to the prior choice of laged model.  
 \item We prune by testing whether each chosen lag is necessary relative to the other choices we have made during the build phase.  
 \end{enumerate}
+\begin{figure}
+\centering
+\includegraphics[scale=.75]{square_games-pics}
+\end{figure}
 Note, we always have $1\in l_{c}$ since this makes all subsequent lags improvements on the basic DMD approach.  This process is formalized and detailed in Algorithm \ref{erdmd}.  
 \begin{algorithm}
 \caption{ERDMD Method}
