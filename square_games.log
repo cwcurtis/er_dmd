@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  19 MAR 2024 12:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  21 MAR 2024 09:36
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -617,7 +617,7 @@ Here is how much of TeX's memory you used:
  81 hyphenation exceptions out of 8191
  116i,5n,119p,703b,513s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on square_games.pdf (1 page, 14064 bytes).
+Output written on square_games.pdf (1 page, 14601 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream

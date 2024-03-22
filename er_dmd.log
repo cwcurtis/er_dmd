@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  19 MAR 2024 13:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  21 MAR 2024 15:25
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -234,194 +234,173 @@ LaTeX Warning: No \author given.
 <square_games-pics.pdf, id=30, 459.7175pt x 496.85625pt>
 File: square_games-pics.pdf Graphic file (type pdf)
 <use square_games-pics.pdf>
-Package pdftex.def Info: square_games-pics.pdf  used on input line 178.
+Package pdftex.def Info: square_games-pics.pdf  used on input line 177.
 (pdftex.def)             Requested size: 344.78728pt x 372.64127pt.
- [5 <./square_games-pics.pdf>] [6]
-<Lorenz_compare_w_mx_lag_150.pdf, id=91, 817.45403pt x 528.37402pt>
+ [5] [6 <./square_games-pics.pdf>] [7]
+<Lorenz_compare_w_mx_lag_150.pdf, id=95, 817.45403pt x 528.37402pt>
 File: Lorenz_compare_w_mx_lag_150.pdf Graphic file (type pdf)
 <use Lorenz_compare_w_mx_lag_150.pdf>
 Package pdftex.def Info: Lorenz_compare_w_mx_lag_150.pdf  used on input line 24
-3.
+9.
 (pdftex.def)             Requested size: 288.0011pt x 186.15108pt.
-<Lorenz_error_compare_w_mx_lag_150.pdf, id=92, 818.91774pt x 528.37402pt>
+<Lorenz_error_compare_w_mx_lag_150.pdf, id=96, 818.91774pt x 528.37402pt>
 File: Lorenz_error_compare_w_mx_lag_150.pdf Graphic file (type pdf)
 <use Lorenz_error_compare_w_mx_lag_150.pdf>
 Package pdftex.def Info: Lorenz_error_compare_w_mx_lag_150.pdf  used on input l
-ine 245.
+ine 251.
 (pdftex.def)             Requested size: 288.0011pt x 185.82053pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Lorenz_norm_full_model_149.pdf, id=93, 455.5192pt x 349.49817pt>
+<Lorenz_norm_full_model_149.pdf, id=97, 455.5192pt x 349.49817pt>
 File: Lorenz_norm_full_model_149.pdf Graphic file (type pdf)
 <use Lorenz_norm_full_model_149.pdf>
-Package pdftex.def Info: Lorenz_norm_full_model_149.pdf  used on input line 255
+Package pdftex.def Info: Lorenz_norm_full_model_149.pdf  used on input line 261
 .
 (pdftex.def)             Requested size: 251.9989pt x 193.34448pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Lorenz_detail_spectrum_w_mx_lag_149.pdf, id=94, 603.18416pt x 364.12569pt>
+[8] [9 <./Lorenz_compare_w_mx_lag_150.pdf> <./Lorenz_error_compare_w_mx_lag_150
+.pdf>]
+<Lorenz_detail_spectrum_w_mx_lag_149.pdf, id=130, 727.17754pt x 350.2504pt>
 File: Lorenz_detail_spectrum_w_mx_lag_149.pdf Graphic file (type pdf)
 <use Lorenz_detail_spectrum_w_mx_lag_149.pdf>
 Package pdftex.def Info: Lorenz_detail_spectrum_w_mx_lag_149.pdf  used on input
- line 264.
-(pdftex.def)             Requested size: 360.0pt x 217.32698pt.
+ line 278.
+(pdftex.def)             Requested size: 360.0pt x 173.39851pt.
 
-Overfull \hbox (12.00002pt too wide) in paragraph at lines 263--266
+Overfull \hbox (12.00002pt too wide) in paragraph at lines 277--280
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7] [8 <./Lorenz_compare_w_mx_lag_150.pdf> <./Lorenz_error_compare_w_mx_lag_150
-.pdf>] [9 <./Lorenz_norm_full_model_149.pdf> <./Lorenz_detail_spectrum_w_mx_lag
-_149.pdf>]
-<Lorenz_error_compare_w_mx_lag_100.pdf, id=161, 817.45403pt x 528.37402pt>
+[10 <./Lorenz_norm_full_model_149.pdf> <./Lorenz_detail_spectrum_w_mx_lag_149.p
+df>]
+<Lorenz_error_compare_w_mx_lag_100.pdf, id=164, 817.45403pt x 528.37402pt>
 File: Lorenz_error_compare_w_mx_lag_100.pdf Graphic file (type pdf)
 <use Lorenz_error_compare_w_mx_lag_100.pdf>
 Package pdftex.def Info: Lorenz_error_compare_w_mx_lag_100.pdf  used on input l
-ine 286.
+ine 292.
 (pdftex.def)             Requested size: 288.0011pt x 186.15108pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Lorenz_norm_full_model_99.pdf, id=162, 464.5645pt x 349.62508pt>
+<Lorenz_norm_full_model_99.pdf, id=165, 464.5645pt x 349.62508pt>
 File: Lorenz_norm_full_model_99.pdf Graphic file (type pdf)
 <use Lorenz_norm_full_model_99.pdf>
-Package pdftex.def Info: Lorenz_norm_full_model_99.pdf  used on input line 294.
+Package pdftex.def Info: Lorenz_norm_full_model_99.pdf  used on input line 300.
 
 (pdftex.def)             Requested size: 251.9989pt x 189.64828pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Lorenz_spectrum_w_mx_lag_99.pdf, id=163, 454.28708pt x 419.77359pt>
+ [11 <./Lorenz_error_compare_w_mx_lag_100.pdf>]
+<Lorenz_spectrum_w_mx_lag_99.pdf, id=180, 454.28708pt x 419.77359pt>
 File: Lorenz_spectrum_w_mx_lag_99.pdf Graphic file (type pdf)
 <use Lorenz_spectrum_w_mx_lag_99.pdf>
 Package pdftex.def Info: Lorenz_spectrum_w_mx_lag_99.pdf  used on input line 30
-2.
+8.
 (pdftex.def)             Requested size: 180.0pt x 166.32436pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[10]
-Overfull \vbox (10.15419pt too high) has occurred while \output is active []
-
-
-[11 <./Lorenz_error_compare_w_mx_lag_100.pdf> <./Lorenz_norm_full_model_99.pdf>
-]
-<Rossler_compare_w_mx_lag_1000.pdf, id=196, 817.45403pt x 529.49094pt>
+ [12 <./Lorenz_norm_full_model_99.pdf> <./Lorenz_spectrum_w_mx_lag_99.pdf>]
+<Rossler_compare_w_mx_lag_1000.pdf, id=210, 817.45403pt x 529.49094pt>
 File: Rossler_compare_w_mx_lag_1000.pdf Graphic file (type pdf)
 <use Rossler_compare_w_mx_lag_1000.pdf>
 Package pdftex.def Info: Rossler_compare_w_mx_lag_1000.pdf  used on input line 
-346.
+353.
 (pdftex.def)             Requested size: 288.0011pt x 186.54459pt.
-<Rossler_error_compare_w_mx_lag_1000.pdf, id=197, 817.45403pt x 528.37402pt>
+<Rossler_error_compare_w_mx_lag_1000.pdf, id=211, 817.45403pt x 528.37402pt>
 File: Rossler_error_compare_w_mx_lag_1000.pdf Graphic file (type pdf)
 <use Rossler_error_compare_w_mx_lag_1000.pdf>
 Package pdftex.def Info: Rossler_error_compare_w_mx_lag_1000.pdf  used on input
- line 348.
+ line 355.
 (pdftex.def)             Requested size: 288.0011pt x 186.15108pt.
- [12 <./Lorenz_spectrum_w_mx_lag_99.pdf>]
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Rossler_norm_full_model_988.pdf, id=213, 468.9037pt x 349.49817pt>
+<Rossler_norm_full_model_988.pdf, id=212, 468.9037pt x 349.49817pt>
 File: Rossler_norm_full_model_988.pdf Graphic file (type pdf)
 <use Rossler_norm_full_model_988.pdf>
-Package pdftex.def Info: Rossler_norm_full_model_988.pdf  used on input line 35
-8.
+Package pdftex.def Info: Rossler_norm_full_model_988.pdf  used on input line 36
+5.
 (pdftex.def)             Requested size: 251.9989pt x 187.83026pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Rossler_detail_spectrum_w_mx_lag_988.pdf, id=214, 590.7391pt x 365.77237pt>
+[13] [14 <./Rossler_compare_w_mx_lag_1000.pdf> <./Rossler_error_compare_w_mx_la
+g_1000.pdf>] [15 <./Rossler_norm_full_model_988.pdf>]
+<Rossler_detail_spectrum_w_mx_lag_988.pdf, id=259, 725.52048pt x 350.2504pt>
 File: Rossler_detail_spectrum_w_mx_lag_988.pdf Graphic file (type pdf)
 <use Rossler_detail_spectrum_w_mx_lag_988.pdf>
 Package pdftex.def Info: Rossler_detail_spectrum_w_mx_lag_988.pdf  used on inpu
-t line 374.
-(pdftex.def)             Requested size: 360.0pt x 222.90872pt.
-
-Underfull \hbox (badness 2556) in paragraph at lines 375--375
-\OT1/cmr/m/n/10.95 the Rossler sys-tem. The ERDMD al-go-rithm con-verges to $\O
-ML/cmm/m/it/10.95 l[] \OT1/cmr/m/n/10.95 =
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[13] [14 <./Rossler_compare_w_mx_lag_1000.pdf> <./Rossler_error_compare_w_mx_la
-g_1000.pdf>] [15 <./Rossler_norm_full_model_988.pdf> <./Rossler_detail_spectrum
-_w_mx_lag_988.pdf>]
-Overfull \hbox (4.75711pt too wide) in paragraph at lines 398--399
+t line 393.
+(pdftex.def)             Requested size: 360.0pt x 173.794pt.
+ [16 <./Rossler_detail_spectrum_w_mx_lag_988.pdf>]
+Overfull \hbox (4.75711pt too wide) in paragraph at lines 419--420
 \OT1/cmr/m/n/10.95 er-ated by a pseudo-spectral in space and fourth-order expon
 ential-differencing
  []
 
-<ks_dynamics_compare.png, id=273, 816.651pt x 672.5928pt>
+<ks_dynamics_compare.png, id=276, 816.651pt x 672.5928pt>
 File: ks_dynamics_compare.png Graphic file (type png)
 <use ks_dynamics_compare.png>
-Package pdftex.def Info: ks_dynamics_compare.png  used on input line 407.
+Package pdftex.def Info: ks_dynamics_compare.png  used on input line 428.
 (pdftex.def)             Requested size: 360.0pt x 296.49594pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Kuramoto_detail_spectrum_w_mx_lag_158.pdf, id=275, 569.22935pt x 364.12569pt>
-File: Kuramoto_detail_spectrum_w_mx_lag_158.pdf Graphic file (type pdf)
-<use Kuramoto_detail_spectrum_w_mx_lag_158.pdf>
-Package pdftex.def Info: Kuramoto_detail_spectrum_w_mx_lag_158.pdf  used on inp
-ut line 436.
-(pdftex.def)             Requested size: 360.0pt x 230.28381pt.
-
-Overfull \hbox (12.00002pt too wide) in paragraph at lines 435--437
- [][] 
- []
-
-[16]
+<Kuramoto_norm_full_model_158.pdf, id=278, 462.8851pt x 349.49817pt>
+File: Kuramoto_norm_full_model_158.pdf Graphic file (type pdf)
+<use Kuramoto_norm_full_model_158.pdf>
+Package pdftex.def Info: Kuramoto_norm_full_model_158.pdf  used on input line 4
+36.
+(pdftex.def)             Requested size: 251.9989pt x 190.27274pt.
+[17]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./er_dmd.bbl [17 <./KS_Dynamics_Compare.png>] [18 <./Kuramoto_detail_spectrum_
-w_mx_lag_158.pdf>] [19]) [20] (./er_dmd.aux)
+[18 <./KS_Dynamics_Compare.png>]
+<Kuramoto_detail_spectrum_w_mx_lag_158.pdf, id=286, 657.09694pt x 324.50114pt>
+File: Kuramoto_detail_spectrum_w_mx_lag_158.pdf Graphic file (type pdf)
+<use Kuramoto_detail_spectrum_w_mx_lag_158.pdf>
+Package pdftex.def Info: Kuramoto_detail_spectrum_w_mx_lag_158.pdf  used on inp
+ut line 470.
+(pdftex.def)             Requested size: 360.0pt x 177.78297pt.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Overfull \hbox (12.00002pt too wide) in paragraph at lines 469--471
+ [][] 
+ []
 
- ) 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./er_dmd.bbl [19 <./Kuramoto_norm_full_model_158.pdf>] [20 <./Kuramoto_detail_
+spectrum_w_mx_lag_158.pdf>] [21]) [22] (./er_dmd.aux) ) 
 Here is how much of TeX's memory you used:
- 3500 strings out of 480129
- 54608 string characters out of 5893409
- 342712 words of memory out of 5000000
- 21431 multiletter control sequences out of 15000+600000
+ 3510 strings out of 480129
+ 54966 string characters out of 5893409
+ 346733 words of memory out of 5000000
+ 21441 multiletter control sequences out of 15000+600000
  478846 words of font info for 63 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 55i,13n,62p,1415b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/symbols/msbm10.pfb>
-Output written on er_dmd.pdf (20 pages, 798783 bytes).
+ 55i,13n,62p,1434b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+extra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
+pfb>
+Output written on er_dmd.pdf (22 pages, 806136 bytes).
 PDF statistics:
- 389 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
+ 411 PDF objects out of 1000 (max. 8388607)
+ 293 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
