@@ -2,6 +2,7 @@
 \usepackage{pstricks}
 \usepackage{pstricks-add}
 \usepackage{auto-pst-pdf} % if you are using pdflatex
+<<<<<<< HEAD
 
 \begin{document}
 \begin{pspicture}(12,22) % Adjust the dimensions as needed (twice as large)
@@ -88,5 +89,66 @@
     
     % ${\bf y}_{j}$ at the center of the rectangle
     \rput(16.5,10){${\bf y}_{j-k+1}$}
+=======
+\pagestyle{empty}
+\begin{document}
+\begin{pspicture}(12,22) % Adjust the dimensions as needed (twice as large)
+    \definecolor{myyellow}{RGB}{255, 255, 153}
+	\definecolor{mypurple}{RGB}{255, 153, 255}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+    \rput(1.,-5){\LARGE {\bf Find:}}    
+	\rput(6.25, -5){\LARGE $\text{argmax}_{j} ~I\left(\left.{\bf y}^{(+)}, {\bf M^{(j)}_{prp}} \right| {\bf M_{gvn}}\right)$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \rput(1.,4){\LARGE ${\bf M^{(j)}_{prp}}$ {\bf :}}    
+
+    \psframe[linecolor=black,fillstyle=solid,fillcolor=mypurple](2.25,2)(3.25,6) % Black border
+    \rput(2.75,4){${\bf y}^{(+)}$}
+    \rput(3.65,4){$=$}
+    
+    \psframe[linecolor=black,fillstyle=solid,fillcolor=myyellow](4,2)(8,6)      	\rput(6,4){\Large \textbf{$\tilde{\bf K}_{1}$}} % Scaled position
+    
+    \psframe[linecolor=black,fillstyle=solid,fillcolor=mypurple](8.25,2)(9.25,6) % Black border
+    \rput(8.75,4){${\bf y}^{(-)}_{1}$}
+
+    \rput(10.1,4){$+~\cdots~+$}
+    
+    \psframe[linecolor=black,fillstyle=solid,fillcolor=myyellow](11,2)(15,6)     	\rput(13,4){\Large \textbf{$\tilde{{\bf K}}_{l_{k}}$}} % Scaled position
+    
+	\rput(3.65,-.5){$+$}
+        
+    \psframe[linecolor=black,fillstyle=solid,fillcolor=mypurple](15.25,2)(16.27,6) % Black border
+    \rput(15.75,4){${\bf y}^{(-)}_{l_{k}}$}
+    
+    \psframe[linecolor=black,fillstyle=solid,fillcolor=myyellow](4,-2.5)(8,1.5)      	
+    \rput(6,-.5){\Large \textbf{$\tilde{\bf K}_{l_{k}+j}$}} % Scaled position
+    
+    \psframe[linecolor=black,fillstyle=solid,fillcolor=mypurple](8.25,-2.5)(9.27,1.5) % Black border
+    \rput(8.75,-.5){${\bf y}^{(-)}_{l_{k}+j}$}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\rput(1,10){\LARGE ${\bf M_{gvn}}$ {\bf :}}    
+
+    \psframe[linecolor=black,fillstyle=solid,fillcolor=mypurple](2.25,8)(3.25,12) % Black border
+    \rput(2.75,10){${\bf y}^{(+)}$}
+    \rput(3.65,10){$=$}
+    
+    \psframe[linecolor=black,fillstyle=solid,fillcolor=myyellow](4,8)(8,12) % Scaled dimensions
+    \rput(6,10){\Large \textbf{${\bf K}_{1}$}} % Scaled position
+
+    \psframe[linecolor=black,fillstyle=solid,fillcolor=mypurple](8.25,8)(9.25,12) % Black border
+    \rput(8.75,10){${\bf y}^{(-)}_{1}$}
+    \rput(10.1,10){$+~\cdots~+$}
+    
+    \psframe[linecolor=black,fillstyle=solid,fillcolor=myyellow](11,8)(15,12) 
+    \rput(13,10){\Large \textbf{$\bf K_{l_{k}}$}} % Scaled position
+    
+    \psframe[linecolor=black,fillstyle=solid,fillcolor=mypurple](15.25,8)(16.27,12) % Black border    
+    \rput(15.75,10){${\bf y}^{(-)}_{l_{k}}$}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+>>>>>>> 32a6a3200d3c0cded69b813f66e18a1b16a53c19
 \end{pspicture}
 \end{document}
