@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage{pstricks}
+\usepackage{pstricks-add}
+\usepackage{auto-pst-pdf} % if you are using pdflatex
+
+\begin{document}
+\begin{pspicture}(12,22) % Adjust the dimensions as needed (twice as large)
+    % Define colors
+    \definecolor{myyellow}{RGB}{255, 255, 153}
+    
+    % Original pair of squares/rectangles
+    
+    % Transparent rectangle with black border around ${\bf y}_{j+1}$
+    \begin{psclip}{\pscustom[linestyle=none]{
+        \psframe[linestyle=none](1.75,2)(3.25,6)
+        \psframe[linestyle=none](2,2)(3,6)
+    }}
+    \psframe*[linecolor=white](2,2)(3,6) % Adjusted dimensions
+    \psframe[linecolor=black](2,2)(3,6) % Black border
+    \end{psclip}
+    
+    % ${\bf y}_{j+1}$ at the center of the rectangle
+    \rput(2.5,4){${\bf y}_{j+1}$}
+    
+    % = sign to the right of the rectangle
+    \rput(3.5,4){$=$}
+    
+    % Semi-transparent yellow square with solid border
+    \psframe[linecolor=black,fillstyle=solid,fillcolor=myyellow](4,2)(8,6) % Scaled dimensions
+    
+    % Label in the center
+    \rput(6,4){\textbf{K\textsubscript{1}}} % Scaled position
+    
+    % Transparent rectangle with black border around ${\bf y}_{j}$
+    \begin{psclip}{\pscustom[linestyle=none]{
+        \psframe[linestyle=none](8,2)(9,6)
+        \psframe[linestyle=none](8.5,2)(9,6)
+    }}
+    \psframe*[linecolor=white](8.5,2)(9,6) % Adjusted dimensions
+    \psframe[linecolor=black](8.5,2)(9,6) % Black border
+    \end{psclip}
+    
+    % ${\bf y}_{j}$ at the center of the rectangle
+    \rput(8.75,4){${\bf y}_{j}$}
+    
+    % New pair of squares/rectangles 1
+    
+    % = sign to the right of the rectangle
+    \rput(3.5,10){$=$}
+    
+    % Semi-transparent yellow square with solid border
+    \psframe[linecolor=black,fillstyle=solid,fillcolor=myyellow](4,8)(8,12) % Scaled dimensions
+    
+    % Label in the center
+    \rput(6,10){\textbf{$\tilde{\bf K}_{1}$}} % Scaled position
+    
+    % Transparent rectangle with black border around ${\bf y}_{j}$
+    \begin{psclip}{\pscustom[linestyle=none]{
+        \psframe[linestyle=none](8,8)(9,12)
+        \psframe[linestyle=none](8.5,8)(9,12)
+    }}
+    \psframe*[linecolor=white](8.5,8)(9,12) % Adjusted dimensions
+    \psframe[linecolor=black](8.5,8)(9,12) % Black border
+    \end{psclip}
+    
+    % ${\bf y}_{j}$ at the center of the rectangle
+    \rput(8.75,10){${\bf y}_{j}$}
+    
+    % New pair of squares/rectangles 2
+    
+    % + in the middle
+    \rput(10,10){$+$}
+    
+    % Semi-transparent yellow square with solid border
+    \psframe[linecolor=black,fillstyle=solid,fillcolor=myyellow](11,8)(15,12) % Scaled dimensions
+    
+    % Label in the center
+    \rput(13,10){\textbf{$\tilde{\bf K}_{k}$}} % Scaled position
+    
+    % Transparent rectangle with black border around ${\bf y}_{j}$
+    \begin{psclip}{\pscustom[linestyle=none]{
+        \psframe[linestyle=none](15.5,8)(17,12)
+        \psframe[linestyle=none](15.5,8)(17,12)
+    }}
+    \psframe*[linecolor=white](15.5,8)(17,12) % Adjusted dimensions
+    \psframe[linecolor=black](15.5,8)(17,12) % Black border
+    \end{psclip}
+    
+    % ${\bf y}_{j}$ at the center of the rectangle
+    \rput(16.5,10){${\bf y}_{j-k+1}$}
+\end{pspicture}
+\end{document}
