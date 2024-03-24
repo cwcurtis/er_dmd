@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=latex 2023.12.29)  17 MAR 2024 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=latex 2023.12.29)  24 MAR 2024 10:47
 entering extended mode
  %&-line parsing enabled.
 **\let \APPmakepictures \empty \input  square_games.tex
@@ -499,22 +499,22 @@ Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
 \pr@output=\toks33
 )))
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 6.
+h' as default language. on input line 8.
 No file square_games-autopp.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
 
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tran
 slations-basic-dictionary-english.trsl
@@ -522,12 +522,18 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 6.
+or `english'. on input line 8.
 Preview: Fontsize 10pt
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 14.
+(Font)              <17.28> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 14.
+(Font)              <12> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 24.
 Preview: Tightpage -39321600 -39321600 39321600 39321600
 [1]
 
@@ -535,12 +541,12 @@ Package pst-pdf Warning: Picture container needs cropping..
 
  ) 
 Here is how much of TeX's memory you used:
- 16044 strings out of 476332
- 350925 string characters out of 5787790
- 1852657 words of memory out of 5000000
- 36250 multiletter control sequences out of 15000+600000
- 513214 words of font info for 35 fonts, out of 8000000 for 9000
+ 16064 strings out of 476332
+ 351209 string characters out of 5787790
+ 1856657 words of memory out of 5000000
+ 36266 multiletter control sequences out of 15000+600000
+ 516875 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 118i,6n,119p,740b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,7n,119p,740b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on square_games-autopp.dvi (1 page, 6488 bytes).
+Output written on square_games-autopp.dvi (1 page, 10308 bytes).

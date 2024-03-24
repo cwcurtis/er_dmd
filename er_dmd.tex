@@ -74,7 +74,7 @@ The structure of the paper is as follows.  In Section 2, we provide a brief intr
 The results in this work are a merging of the higher-order DMD (HODMD) method of \cite{clainche}, and the entropic regression technique for network detection and model construction found in \cite{bollt, bollt2}.  We now briefly explain both results, and then we show how to bring them together in order to build accurate, yet minimal time lag models.     
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Higher Order DMD}
+\subsection{Higher-Order DMD}
 
 Originally presented in \cite{clainche}, though see also the HAVOK method in \cite{brunton_havok} and Hankel DMD method of \cite{arbabi}, we generalize the HODMD so as to keep each lagged model separate, causal, and formulated over an arbitrary sequence of not necessarily unit incremement lags.  We suppose that we have the maximum lag of $d$ time steps.  We likewise suppose that we have the choice of say $N_{l}$ lags as $l_{c}=\left\{l_{1}, l_{2}, \cdots, l_{k}, \cdots, l_{N_{l}}\right\}$, with $1=l_{1} < l_{j} < l_{j+1} < l_{N_{L}}<d$.  Given times series $\left\{{\bf y}_{j}\right\}_{j=0}^{N_{T}}$, we then define the matrices 
 \[
@@ -92,9 +92,10 @@ and the $s\times (N_{T}-d+1)$ shifted mask matrices ${\bf M}_{l}$ where
 \]
 
 An arbitrary lagged DMD model can then be written as 
-\[
-{\bf Y}_{+,d} = \sum_{k=1}^{N_{L}}{\bf K}_{l_{k}}{\bf Y}_{-}{\bf M}_{l_{k}}
-\]
+\begin{equation}
+{\bf Y}_{+,d} = \sum_{k=1}^{N_{L}}{\bf K}_{l_{k}}{\bf Y}_{-}{\bf M}_{l_{k}},
+\label{basic_model}
+\end{equation}
 where we note that each matrix ${\bf K}_{l_{k}}$ is $s\times s$.  Using our standard optimization arguments, we can find each matrix ${\bf K}_{l_{j}}$ via the critical-point equation
 \[
 \sum_{k=1}^{N_{L}}{\bf K}_{l_{k}}{\bf Y}_{-}{\bf M}_{l_{k}}{\bf M}_{l_{j}}^{T}{\bf Y}_{-}^{T} = {\bf Y}_{+,d}{\bf M}_{l_{j}}^{T}{\bf Y}_{-}^{T}.
@@ -111,9 +112,15 @@ and
 \[
 {\bf Y}_{-}(l_{c}) = \begin{pmatrix} {\bf Y}_{-}{\bf M}_{l_{N_{L}}} \\ {\bf Y}_{-}{\bf M}_{l_{N_{L}}-1} \\ \vdots \\ {\bf Y}_{-}{\bf M}_{1} \end{pmatrix}.
 \]
-Note, in \cite{clainche}, models with distinct matrices ${\bf K}_{l_{j}}$ for each lag were eschewed for something much closer to what is now called Hankel DMD.  While effective, and in several respects simpler, such an approach does not as readily allow for more thoughtful model selection as we explain in the next section.  
 
-That said, a price is paid for working with separate lag matrices when one wants to look at the corresponding one-step Koopman operator, say $\mathcal{K}^{\delta}$ which would be approximated by
+Once the model in Equation \eqref{basic_model} is built, we run it by coupling outputs to inputs so that for $j\geq d$, we have 
+\begin{equation}
+{\bf y}_{j+1} = \sum_{k=1}^{N_{L}}{\bf K}_{l_{k}}{\bf y}_{j+1-l_{k}}{\bf M}_{l_{k}}.  
+\label{iterator}
+\end{equation}
+While the method sees data within the original given time series, we say the method is performing {\it reconstruction}.  When it begins to iterate over data it has not seen, then we say the model is performing {\it forecasting}. 
+
+In \cite{clainche}, models with distinct matrices ${\bf K}_{l_{j}}$ for each lag were eschewed for something much closer to what is now called Hankel DMD.  While effective, and in several respects simpler, such an approach does not as readily allow for more thoughtful model selection as we explain in the next section.  That said, a price is paid for working with separate lag matrices when one wants to look at the corresponding one-step Koopman operator, say $\mathcal{K}^{\delta}$ which would be approximated by
 \begin{equation}
 \mathcal{K}^{\delta} \approx {\bf K}_{a} \equiv 
 \begin{pmatrix} 
@@ -162,19 +169,16 @@ This initial concept of transfer entropy has given rise to a host of modificatio
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Entropic-Regression-Dynamic-Mode Decomposition}
 
-Thus, we can see how the ER approach can be used to enhance the  HODMD.  We again suppose that the time dynamics is modeled with at most $d-$lags as 
-\[
-{\bf y}_{j+d} = \sum_{l=1}^{d}{\bf K}_{l}{\bf y}_{j+d-l}, 
-\]
-where ${\bf K}_{l}$ is $s \times s$ matrix describing the appropriate lag effect.  To choose the appropriate lags in HODMD, we adapt the method of {\it entropic-regression} from \cite{bollt2}.  There are three stages to the method, which are 
+Thus, we can see how the ER approach can be used to enhance the  HODMD.  We again suppose that the time dynamics is modeled with at most $d-$lags as in Equations \eqref{basic_model} and \eqref{iterator}.  To choose the appropriate lags in HODMD, we adapt the method of {\it entropic-regression} from \cite{bollt2}.  There are three stages to the method, which are 
 \begin{enumerate}
-\item We initialize our choice of lags $l_{c}=\left\{1\right\}$ and corresponding HODMD matrix ${\bf K}_{1}$ which is found via the typical DMD method.    
-\item We then further build these lists through finding those laged models, say ${\bf M}^{(j)}_{prp}\equiv {\bf K}(l_{t}){\bf Y}_{-}(l_{t})$ which provide the most information relative to the prior choice of laged model, say ${\bf M}_{gvn}\equiv {\bf K}(l_{c}){\bf Y}_{-}(l_{t})$, i.e. we find $\text{argmax}_{j}I\left({\bf Y}^{+}_{d},{\bf K}(l_{t}){\bf Y}_{-}(l_{t})|{\bf K}(l_{c}){\bf Y}_{-}(l_{t})\right)$; see Figure \ref{fig:build_stage} for an illustration of this process.    
-\item We finally prune by testing whether each chosen lag is necessary relative to the other choices we have made during the build phase.  
+\item {\bf INITIALIZE}: We initialize our choice of lags $l_{c}=\left\{1\right\}$ and corresponding HODMD matrix ${\bf K}_{1}$ which is found via the typical DMD method.    
+\item {\bf BUILD}: We then further build these lists through finding those laged models, say ${\bf M}^{(j)}_{prp}\equiv {\bf K}(l_{t}){\bf Y}_{-}(l_{t})$ which provide the most information relative to the prior choice of laged model, say ${\bf M}_{gvn}\equiv {\bf K}(l_{c}){\bf Y}_{-}(l_{t})$, i.e. we find $\text{argmax}_{j}I\left({\bf Y}^{+}_{d},{\bf K}(l_{t}){\bf Y}_{-}(l_{t})|{\bf K}(l_{c}){\bf Y}_{-}(l_{t})\right)$.  If this value is larger than zero in a statistically significant way (measured through shuffle testing), then the model is updated to the corresponding model ${\bf M}^{(j)}_{prp}$; see Figure \ref{fig:build_stage} for an illustration of this process.    
+\item {\bf PRUNE}: We finally prune by testing whether each chosen lag is necessary relative to the other choices we have made during the build phase.  Thus, for a given model ${\bf M}_{gvn}\equiv {\bf K}(l_{c}){\bf Y}_{-}(l_{t})$, we generate ${\bf M}^{(j)}_{prp}\equiv {\bf K}(l_{c}\backslash l_{j}){\bf Y}_{-}(l_{t})$ and then find $\text{argmin}_{j}I\left({\bf Y}^{+}_{d},{\bf M}^{(j)}_{prp}|{\bf M}_{gvn}\right)$.  If this value is close to zero in a statistically significant way (measured through shuffle testing), then model is updated to the corresponding ${\bf M}^{(j)}_{prp}$.  
 \end{enumerate}
 \begin{figure}
 \centering
-\includegraphics[scale=.75]{square_games-pics}
+%\includegraphics[scale=.75]{square_games-pics}
+\includegraphics[scale=.75]{square_games}
 \caption{The BUILD stage of the ERDMD algorithm.  Here, we start from the given model ${\bf M}_{gvn}$ which represents the choice of lags $(1, \cdots, l_{k})$ with correspondig matrices $({\bf K}_{1}, \cdots, {\bf K}_{l_{k}})$, and we then find a proposed model ${\bf M}^{(j)}_{prp}$ which maximizes $I({\bf y}^{+}, {\bf M}^{(j)}_{prp}|{\bf M}_{gvn})$, or the information gain in using the proposed model relative to the given model to anticipate the next time steps represented by ${\bf y}^{(+)}$.}  
 \label{fig:build_stage}
 \end{figure}

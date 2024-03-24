@@ -1,12 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.20)  24 MAR 2024 10:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=latex 2023.12.29)  24 MAR 2024 10:48
 entering extended mode
- \write18 enabled.
  %&-line parsing enabled.
-**./square_games.tex
-(square_games.tex
-LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-03-30>
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+**\let \APPmakepictures \empty \input  square_games_prune.tex
+(square_games_prune.tex (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex
+/base\article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
@@ -22,27 +19,21 @@ File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-)
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/pstricks\pstricks.sty
+) (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/pstricks\pstricks.sty
 Package: pstricks 2024/02/02 v0.75 LaTeX wrapper for `PSTricks' (RN,HV)
-
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
-)
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+) (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
-
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 227.
-
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-)
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Driver file: dvips.def on input line 227.
+(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\dvips.def
+File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
+) (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.lt
+x)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
@@ -50,25 +41,22 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-)
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\pst-xkey.tex
+) (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\pst-xkey.te
+x
 File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
-
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
-
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (
+C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks16
 \XKV@tempa@toks=\toks17
-
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\keyval.tex))
 \XKV@depth=\count193
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )))
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.tex
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex
-`pst-fp' v0.06, 2020/11/20 (hv)
+(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex `
+pst-fp' v0.06, 2020/11/20 (hv)
 \pstFP@xs=\count194
 \pstFP@xia=\count195
 \pstFP@xib=\count196
@@ -94,8 +82,8 @@ y
 \pgfutil@abb=\box51
 )
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
-code.tex
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+code.tex (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revi
+sion.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
@@ -108,8 +96,8 @@ ty
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 libraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks21
-)))
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+))) (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.st
+y
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
 .tex
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
@@ -169,7 +157,6 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@toks=\toks26
 ))
 \psLoopIndex=\count275
-
 `PSTricks' v3.19c  <2024/02/02> (tvz,hv)
 \pst@dima=\dimen154
 \pst@dimb=\dimen155
@@ -234,25 +221,21 @@ s.tex)
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.con
 ))
 File: pstricks.tex 2024/02/02 v3.19c `PSTricks' (tvz,hv)
-
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex
-`pst-fp' v0.06, 2020/11/20 (hv))
+(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex `
+pst-fp' v0.06, 2020/11/20 (hv))
 File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
 )
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/pstricks-add\pstricks-a
-dd.sty
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/pst-plot\pst-plot.sty
+dd.sty (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/pst-plot\pst-plo
+t.sty
 Package: pst-plot 2011/06/05 v1.00 LaTeX wrapper for `pst-plot' (HV)
-
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\pst-xkey.sty
 Package: pst-xkey 2005/11/25 v1.6 package wrapper for pst-xkey.tex (HA)
-)
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/multido\multido.sty
+) (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/multido\multido.sty
 Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
 
-
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/multido\multido.tex
- v1.42, 2010/05/14 <tvz>
+(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/multido\multido.tex  
+v1.42, 2010/05/14 <tvz>
 \multido@count=\count289
 \multidocount=\count290
 \multido@stuff=\toks30
@@ -282,9 +265,8 @@ ex `PST-tools' v0.12, 2021/09/23 (hv)
 \pst@argcnt=\count298
 )
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pst-arrow\pst-arrow.t
-ex `pst-arrow' v0.05, 2021/11/16 (dr,hv))
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pst-3d\pst-3d.tex
-`PST-3d' v1.11, 2010/02/14 (tvz))
+ex `pst-arrow' v0.05, 2021/11/16 (dr,hv)) (C:\Users\mrssi\AppData\Local\Program
+s\MiKTeX\tex/generic/pst-3d\pst-3d.tex `PST-3d' v1.11, 2010/02/14 (tvz))
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pst-math\pst-math.tex
 `pst-math' v0.67 , (CJ,hv)) `pstricks-add' v3.94, 2023/04/17 (dr,hv)
 \psparallelogramsep=\dimen181
@@ -297,8 +279,7 @@ ex `pst-arrow' v0.05, 2021/11/16 (dr,hv))
 \pst@chartStackWidth=\dimen186
 \chart@Toggle=\count301
 \psVectorCtr=\count302
-)
- v1.94, 2022/11/21 (tvz,hv)
+)  v1.94, 2022/11/21 (tvz,hv)
 \pstRadUnit=\dimen187
 \pstRadUnitInv=\dimen188
 \pst@linecnt=\count303
@@ -321,8 +302,7 @@ ex `pst-arrow' v0.05, 2021/11/16 (dr,hv))
 \pst@yunit=\dimen259
 )
 File: pst-plot.tex 2022/11/21 1.94 `pst-plot' (tvz,hv)
-)
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/pst-node\pst-node.sty
+) (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/pst-node\pst-node.sty
 Package: pst-node 2012/09/18 v1.01 LaTeX wrapper for `pst-node' (HV)
 Package: pst-node 2010/04/22 package wrapper for pst-node.tex
 
@@ -331,11 +311,9 @@ Package: pst-node 2010/04/22 package wrapper for pst-node.tex
 File: pst-node.tex 2022/11/21 1.94 `pst-node' (tvz,hv)
 ) (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/pst-3d\pst-3d.sty
 Package: pst-3d 2009/07/28 package wrapper for pst-3d.tex (hv)
-
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pst-3d\pst-3d.tex)
 File: pst-3d.tex 2022/11/21 v1.94 `PST-3d' (hv)
-)
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/pst-math\pst-math.sty
+) (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/pst-math\pst-math.sty
 Package: pst-math 2023/07/03 v 0.67 package wrapper for PSTricks pst-math.tex
 
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/pst-calculate\pst-calcu
@@ -344,43 +322,46 @@ Package: pst-calculate 2019/01/24 v. 0.02(Herbert Voss) Support for caculations
  with floating point numbers.
 
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
-e.sty
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+e.sty (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.st
+y
 Package: expl3 2023-03-30 L3 programming layer (loader) 
 
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count305
+(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-dvi
+ps.def
+File: l3backend-dvips.def 2023-03-30 L3 backend support: dvips
 \l__pdf_internal_box=\box56
+\g__pdf_backend_object_int=\count305
+\l__pdf_backend_content_box=\box57
+\l__pdf_backend_model_box=\box58
+\g__pdf_backend_annotation_int=\count306
+\g__pdf_backend_link_int=\count307
+\g__pdf_backend_link_sf_int=\count308
 ))
 Package: xparse 2023-02-02 L3 Experimental document command parser
-)
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
+) (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
 Package: siunitx 2024-02-15 v3.3.12 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count306
-\l__siunitx_number_exponent_fixed_int=\count307
-\l__siunitx_number_min_decimal_int=\count308
-\l__siunitx_number_min_integer_int=\count309
-\l__siunitx_number_round_precision_int=\count310
-\l__siunitx_number_lower_threshold_int=\count311
-\l__siunitx_number_upper_threshold_int=\count312
-\l__siunitx_number_group_first_int=\count313
-\l__siunitx_number_group_size_int=\count314
-\l__siunitx_number_group_minimum_int=\count315
+\l__siunitx_number_uncert_offset_int=\count309
+\l__siunitx_number_exponent_fixed_int=\count310
+\l__siunitx_number_min_decimal_int=\count311
+\l__siunitx_number_min_integer_int=\count312
+\l__siunitx_number_round_precision_int=\count313
+\l__siunitx_number_lower_threshold_int=\count314
+\l__siunitx_number_upper_threshold_int=\count315
+\l__siunitx_number_group_first_int=\count316
+\l__siunitx_number_group_size_int=\count317
+\l__siunitx_number_group_minimum_int=\count318
 \l__siunitx_angle_tmp_dim=\dimen260
-\l__siunitx_angle_marker_box=\box57
-\l__siunitx_angle_unit_box=\box58
-\l__siunitx_compound_count_int=\count316
+\l__siunitx_angle_marker_box=\box59
+\l__siunitx_angle_unit_box=\box60
+\l__siunitx_compound_count_int=\count319
 
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/translations\translatio
 ns.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
  (CN)
-
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count317
+\etb@tempcnta=\count320
 )
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
 .sty
@@ -390,62 +371,58 @@ Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
 ty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+) (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
 )) (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
-
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks31
 \ex@=\dimen261
 ))
-\l__siunitx_table_tmp_box=\box59
+\l__siunitx_table_tmp_box=\box61
 \l__siunitx_table_tmp_dim=\dimen262
 \l__siunitx_table_column_width_dim=\dimen263
-\l__siunitx_table_integer_box=\box60
-\l__siunitx_table_decimal_box=\box61
-\l__siunitx_table_uncert_box=\box62
-\l__siunitx_table_before_box=\box63
-\l__siunitx_table_after_box=\box64
+\l__siunitx_table_integer_box=\box62
+\l__siunitx_table_decimal_box=\box63
+\l__siunitx_table_uncert_box=\box64
+\l__siunitx_table_before_box=\box65
+\l__siunitx_table_after_box=\box66
 \l__siunitx_table_before_dim=\dimen264
 \l__siunitx_table_carry_dim=\dimen265
-\l__siunitx_unit_tmp_int=\count318
-\l__siunitx_unit_position_int=\count319
-\l__siunitx_unit_total_int=\count320
-
+\l__siunitx_unit_tmp_int=\count321
+\l__siunitx_unit_position_int=\count322
+\l__siunitx_unit_total_int=\count323
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen266
-\ar@mcellbox=\box65
+\ar@mcellbox=\box67
 \extrarowheight=\dimen267
 \NC@list=\toks32
 \extratabsurround=\skip52
 \backup@length=\skip53
-\ar@cellbox=\box66
-)))
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
+\ar@cellbox=\box68
+))) (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.st
+y
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-)
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
-\xs_counta=\count321
-\xs_countb=\count322
+) (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty (
+C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
+\xs_counta=\count324
+\xs_countb=\count325
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/pst-math\pst-math.tex
 )
 File: pst-math.tex 2022/11/21 v1.94 `PST-math' (hv)
-\c@Rand@No=\count323
-\c@Random@Left=\count324
-\c@Random@Right=\count325
-\c@Random@No@max=\count326
+\c@Rand@No=\count326
+\c@Random@Left=\count327
+\c@Random@Right=\count328
+\c@Random@No@max=\count329
 )
 Package: pstricks-add 2021/09/10 v. 0.17 package wrapper for pstricks-add.tex (
 hv)
@@ -457,16 +434,17 @@ File: pstricks-add.tex 2022/11/21 v1.94 `PSTricks-add' (hv)
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/auto-pst-pdf\auto-pst-p
 df.sty
 Package: auto-pst-pdf 2020/10/08 v0.7 Wrapper for pst-pdf
-
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 )
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/ifplatform\ifplatform.s
 ty
 Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
- (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
-Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+
+Package shellesc Warning: Shell escape disabled on input line 73.
+
 )
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/catchfile\catchfile.s
 ty
@@ -474,68 +452,25 @@ Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)))
-\c@app@runs=\count327
-runsystem(echo " ")...executed.
+))
 
-runsystem(echo "-------------------------------------------------")...executed.
+Package ifplatform Warning: 
+    shell escape is disabled, so I can only detect \ifwindows.
 
-runsystem(echo "auto-pst-pdf: Auxiliary LaTeX compilation")...executed.
-
-runsystem(echo "-------------------------------------------------")...executed.
-
-runsystem(del "square_games-autopp.log")...executed.
-
-runsystem(del "square_games-autopp.dvi")...executed.
-
-runsystem(del "square_games-autopp.ps")...executed.
-
-runsystem(latex -disable-write18 -jobname="square_games-autopp" -interaction=ba
-tchmode  "\let \APPmakepictures \empty \input  square_games.tex")...executed.
-
-runsystem(dvips -Ppdf -o "square_games-autopp.ps" "square_games-autopp.dvi")...
-executed.
-
-runsystem(ps2pdf  "square_games-autopp.ps" "square_games-autopp.pdf")...execute
-d.
-
-
-
-Package auto-pst-pdf Warning: 
-    Creation of square_games-autopp.pdf failed.
-This warning occured on input line 128.
-
-
-Package auto-pst-pdf Warning: 
-    Could not create square_games-pics.pdf. Auxiliary files not deleted.
-This warning occured on input line 128.
-
-runsystem(echo "-------------------------------------------------")...executed.
-
-runsystem(echo "auto-pst-pdf: End auxiliary LaTeX compilation")...executed.
-
-runsystem(echo "-------------------------------------------------")...executed.
-
+)
+\c@app@runs=\count330
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/pst-pdf\pst-pdf.sty
 Package: pst-pdf 2020/10/10 v1.2f PS graphics for pdfLaTeX (RN,HjG)
-
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-)
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+) (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/luatex85\luatex85.sty
-Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
-)
-\c@pspicture=\count328
-
+\c@pspicture=\count331
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
-
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
@@ -543,101 +478,75 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
+Package graphics Info: Driver file: dvips.def on input line 107.
 )
 \Gin@req@height=\dimen268
 \Gin@req@width=\dimen269
 )
-Package pst-pdf Info: MODE: 1 (pdfTeX mode) on input line 213.
-\ppf@output=\toks33
+Package pst-pdf Info: MODE: 0 (dvi -- extraction mode) on input line 103.
+No auxiliary output files.
 
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/preview\preview.sty
 Package: preview 2024/01/17 13.3 (AUCTeX/preview-latex)
-\pr@snippet=\count329
-\pr@box=\box67
-\pr@output=\toks34
+(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/luatex85\luatex85.sty
+Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
 )
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
-Package: environ 2014/05/04 v0.3 A new way to define environments
-
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.s
-ty
-Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/preview\prtightpage.def
+\PreviewBorder=\dimen270
 )
-\@envbody=\toks35
+\pr@snippet=\count332
+\pr@box=\box69
+\pr@output=\toks33
 )))
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 8.
+h' as default language. on input line 7.
+No file square_games_prune-autopp.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 
-No file square_games.aux.
-\openout1 = `square_games.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-
-(C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count330
-\scratchdimen=\dimen270
-\scratchbox=\box68
-\nofMPsegments=\count331
-\nofMParguments=\count332
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count333
-\MPscratchDim=\dimen271
-\MPnumerator=\count334
-\makeMPintoPDFobject=\count335
-\everyMPtoPDFconversion=\toks37
-)
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tran
 slations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 8.
-
+or `english'. on input line 7.
 Preview: Fontsize 10pt
-Preview: PDFoutput 1
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 20.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 20.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 23.
+Preview: Tightpage -39321600 -39321600 39321600 39321600
+[1]
 
-Package pst-pdf Warning: pspicture No. 1 undefined.
+Package pst-pdf Warning: Picture container needs cropping..
 
-
-Package pst-pdf Warning: File `square_games-pics.pdf' not found. 
-(pst-pdf)                Use the following commands to create it: 
-(pst-pdf)                ---------------------------------------------------- 
-(pst-pdf)                latex square_games.tex
-(pst-pdf)                dvips -o square_games-pics.ps square_games.dvi
-(pst-pdf)                ps2pdf square_games-pics.ps
-(pst-pdf)                ---------------------------------------------------- .
-
-
-(square_games.aux) ) 
+ ) 
 Here is how much of TeX's memory you used:
- 16453 strings out of 476331
- 357201 string characters out of 5787765
- 1849660 words of memory out of 5000000
- 36648 multiletter control sequences out of 15000+600000
- 512287 words of font info for 32 fonts, out of 8000000 for 9000
+ 16064 strings out of 476332
+ 351269 string characters out of 5787790
+ 1856657 words of memory out of 5000000
+ 36266 multiletter control sequences out of 15000+600000
+ 516875 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 118i,1n,119p,705b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,7n,119p,746b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-No pages of output.
-PDF statistics:
- 0 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+Output written on square_games_prune-autopp.dvi (1 page, 10308 bytes).

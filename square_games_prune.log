@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.20)  24 MAR 2024 10:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.20)  24 MAR 2024 10:48
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**./square_games.tex
-(square_games.tex
+**./square_games_prune.tex
+(square_games_prune.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-03-30>
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -484,30 +484,31 @@ runsystem(echo "auto-pst-pdf: Auxiliary LaTeX compilation")...executed.
 
 runsystem(echo "-------------------------------------------------")...executed.
 
-runsystem(del "square_games-autopp.log")...executed.
+runsystem(del "square_games_prune-autopp.log")...executed.
 
-runsystem(del "square_games-autopp.dvi")...executed.
+runsystem(del "square_games_prune-autopp.dvi")...executed.
 
-runsystem(del "square_games-autopp.ps")...executed.
+runsystem(del "square_games_prune-autopp.ps")...executed.
 
-runsystem(latex -disable-write18 -jobname="square_games-autopp" -interaction=ba
-tchmode  "\let \APPmakepictures \empty \input  square_games.tex")...executed.
+runsystem(latex -disable-write18 -jobname="square_games_prune-autopp" -interact
+ion=batchmode  "\let \APPmakepictures \empty \input  square_games_prune.tex")..
+.executed.
 
-runsystem(dvips -Ppdf -o "square_games-autopp.ps" "square_games-autopp.dvi")...
-executed.
+runsystem(dvips -Ppdf -o "square_games_prune-autopp.ps" "square_games_prune-aut
+opp.dvi")...executed.
 
-runsystem(ps2pdf  "square_games-autopp.ps" "square_games-autopp.pdf")...execute
-d.
+runsystem(ps2pdf  "square_games_prune-autopp.ps" "square_games_prune-autopp.pdf
+")...executed.
 
 
 
 Package auto-pst-pdf Warning: 
-    Creation of square_games-autopp.pdf failed.
+    Creation of square_games_prune-autopp.pdf failed.
 This warning occured on input line 128.
 
 
 Package auto-pst-pdf Warning: 
-    Could not create square_games-pics.pdf. Auxiliary files not deleted.
+    Could not create square_games_prune-pics.pdf. Auxiliary files not deleted.
 This warning occured on input line 128.
 
 runsystem(echo "-------------------------------------------------")...executed.
@@ -567,25 +568,24 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \@envbody=\toks35
 )))
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 8.
+h' as default language. on input line 7.
+ (square_games_prune.aux)
+\openout1 = `square_games_prune.aux'.
 
-No file square_games.aux.
-\openout1 = `square_games.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 
 (C:\Users\mrssi\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -608,7 +608,7 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 8.
+or `english'. on input line 7.
 
 Preview: Fontsize 10pt
 Preview: PDFoutput 1
@@ -616,24 +616,25 @@ Preview: PDFoutput 1
 Package pst-pdf Warning: pspicture No. 1 undefined.
 
 
-Package pst-pdf Warning: File `square_games-pics.pdf' not found. 
+Package pst-pdf Warning: File `square_games_prune-pics.pdf' not found. 
 (pst-pdf)                Use the following commands to create it: 
 (pst-pdf)                ---------------------------------------------------- 
-(pst-pdf)                latex square_games.tex
-(pst-pdf)                dvips -o square_games-pics.ps square_games.dvi
-(pst-pdf)                ps2pdf square_games-pics.ps
+(pst-pdf)                latex square_games_prune.tex
+(pst-pdf)                dvips -o square_games_prune-pics.ps square_games_prune
+.dvi
+(pst-pdf)                ps2pdf square_games_prune-pics.ps
 (pst-pdf)                ---------------------------------------------------- .
 
 
-(square_games.aux) ) 
+(square_games_prune.aux) ) 
 Here is how much of TeX's memory you used:
- 16453 strings out of 476331
- 357201 string characters out of 5787765
+ 16455 strings out of 476331
+ 357456 string characters out of 5787765
  1849660 words of memory out of 5000000
  36648 multiletter control sequences out of 15000+600000
  512287 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 118i,1n,119p,705b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,1n,119p,711b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 No pages of output.
 PDF statistics:
