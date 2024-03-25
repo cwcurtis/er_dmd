@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  25 MAR 2024 13:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  25 MAR 2024 13:48
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -232,126 +232,15 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) [1
 
-LaTeX Warning: Citation `taira' on page 1 undefined on input line 67.
-
-
-LaTeX Warning: Citation `lusch' on page 1 undefined on input line 67.
-
-
-LaTeX Warning: Citation `azencot' on page 1 undefined on input line 67.
-
-
-LaTeX Warning: Citation `lago_dldmd' on page 1 undefined on input line 67.
-
-
-LaTeX Warning: Citation `arbabi' on page 1 undefined on input line 69.
-
-
-LaTeX Warning: Citation `clainche' on page 1 undefined on input line 69.
-
-
-LaTeX Warning: Citation `duraisamy' on page 1 undefined on input line 69.
-
-
-LaTeX Warning: Citation `champion2' on page 1 undefined on input line 69.
-
-
-LaTeX Warning: Citation `kutz4' on page 1 undefined on input line 69.
-
-
-LaTeX Warning: Citation `curtis_dldmd' on page 1 undefined on input line 69.
-
-
-LaTeX Warning: Citation `duraisamy' on page 1 undefined on input line 69.
-
-
-LaTeX Warning: Citation `arbabi' on page 1 undefined on input line 69.
-
-
-LaTeX Warning: Citation `curtis_dldmd' on page 1 undefined on input line 69.
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Citation `bollt2' on page 2 undefined on input line 71.
-
-
-LaTeX Warning: Citation `schreiber' on page 2 undefined on input line 71.
-
-
-LaTeX Warning: Citation `bollt' on page 2 undefined on input line 71.
-
-
-LaTeX Warning: Citation `aikake' on page 2 undefined on input line 71.
-
-
-LaTeX Warning: Citation `arbabi' on page 2 undefined on input line 73.
-
-
-LaTeX Warning: Citation `curtis_dldmd' on page 2 undefined on input line 73.
-
-
-LaTeX Warning: Citation `curtis_dldmd' on page 2 undefined on input line 73.
-
-
-LaTeX Warning: Citation `bollt2' on page 2 undefined on input line 73.
-
-
-LaTeX Warning: Citation `clainche' on page 2 undefined on input line 83.
-
-
-LaTeX Warning: Citation `bollt' on page 2 undefined on input line 83.
-
-
-LaTeX Warning: Citation `bollt2' on page 2 undefined on input line 83.
-
-[2]
-
-LaTeX Warning: Citation `clainche' on page 3 undefined on input line 88.
-
-
-LaTeX Warning: Citation `brunton_havok' on page 3 undefined on input line 88.
-
-
-LaTeX Warning: Citation `arbabi' on page 3 undefined on input line 88.
-
-[3]
-
-LaTeX Warning: Citation `clainche' on page 4 undefined on input line 132.
-
-[4]
-
-LaTeX Warning: Citation `granger' on page 5 undefined on input line 165.
-
-
-LaTeX Warning: Citation `schreiber' on page 5 undefined on input line 165.
-
-
-LaTeX Warning: Citation `schreiber' on page 5 undefined on input line 165.
-
-
-LaTeX Warning: Citation `faes' on page 5 undefined on input line 176.
-
-
-LaTeX Warning: Citation `bollt' on page 5 undefined on input line 176.
-
-
-LaTeX Warning: Citation `bollt2' on page 5 undefined on input line 181.
-
-[5]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
 <square_games-pics.pdf, id=34, 459.7175pt x 496.85625pt>
 File: square_games-pics.pdf Graphic file (type pdf)
 <use square_games-pics.pdf>
 Package pdftex.def Info: square_games-pics.pdf  used on input line 189.
 (pdftex.def)             Requested size: 344.78728pt x 372.64127pt.
-
-
-LaTeX Warning: Citation `curtis_dldmd' on page 6 undefined on input line 247.
-
-[6] [7 <./square_games-pics.pdf>] [8]
+ [6] [7 <./square_games-pics.pdf>] [8]
 <Lorenz_compare_w_mx_lag_150.pdf, id=99, 817.45403pt x 528.37402pt>
 File: Lorenz_compare_w_mx_lag_150.pdf Graphic file (type pdf)
 <use Lorenz_compare_w_mx_lag_150.pdf>
@@ -393,17 +282,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [9] [10 <./Lorenz_compare_w_mx_lag_150.pdf> <./Lorenz_error_compare_w_mx_lag_15
 0.pdf>]
-
-LaTeX Warning: Citation `duraisamy' on page 11 undefined on input line 303.
-
 <Lorenz_error_compare_w_mx_lag_100.pdf, id=135, 817.45403pt x 528.37402pt>
 File: Lorenz_error_compare_w_mx_lag_100.pdf Graphic file (type pdf)
 <use Lorenz_error_compare_w_mx_lag_100.pdf>
 Package pdftex.def Info: Lorenz_error_compare_w_mx_lag_100.pdf  used on input l
 ine 306.
 (pdftex.def)             Requested size: 288.0011pt x 186.15108pt.
-[11 <./Lorenz_norm_full_model_149.pdf> <./Lorenz_detail_spectrum_w_mx_lag_149.p
-df>]
+ [11 <./Lorenz_norm_full_model_149.pdf> <./Lorenz_detail_spectrum_w_mx_lag_149.
+pdf>]
 <Lorenz_norm_full_model_99.pdf, id=169, 464.5645pt x 349.62508pt>
 File: Lorenz_norm_full_model_99.pdf Graphic file (type pdf)
 <use Lorenz_norm_full_model_99.pdf>
@@ -462,28 +348,12 @@ t line 407.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[16 <./Rossler_norm_full_model_988.pdf>]
-
-LaTeX Warning: Citation `robinson' on page 17 undefined on input line 419.
-
-
-LaTeX Warning: Citation `citanovic' on page 17 undefined on input line 431.
-
-[17 <./Rossler_detail_spectrum_w_mx_lag_988.pdf>]
-
-LaTeX Warning: Citation `kassam' on page 18 undefined on input line 433.
-
-
-LaTeX Warning: Citation `berkooz' on page 18 undefined on input line 433.
-
-
+[16 <./Rossler_norm_full_model_988.pdf>] [17 <./Rossler_detail_spectrum_w_mx_la
+g_988.pdf>]
 Overfull \hbox (4.75711pt too wide) in paragraph at lines 433--434
 \OT1/cmr/m/n/10.95 er-ated by a pseudo-spectral in space and fourth-order expon
 ential-differencing
  []
-
-
-LaTeX Warning: Citation `curtis_dldmd' on page 18 undefined on input line 439.
 
 <ks_dynamics_compare.png, id=280, 816.651pt x 672.5928pt>
 File: ks_dynamics_compare.png Graphic file (type png)
@@ -515,46 +385,41 @@ Overfull \hbox (12.00002pt too wide) in paragraph at lines 483--485
  []
 
 [19 <./KS_Dynamics_Compare.png>] [20 <./Kuramoto_norm_full_model_158.pdf> <./Ku
-ramoto_detail_spectrum_w_mx_lag_158.pdf>]
-No file er_dmd.bbl.
-[21] (./er_dmd.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+ramoto_detail_spectrum_w_mx_lag_158.pdf>] (./er_dmd.bbl [21]) [22]
+(./er_dmd.aux) ) 
 Here is how much of TeX's memory you used:
- 3573 strings out of 480129
- 55999 string characters out of 5893409
- 347987 words of memory out of 5000000
- 21502 multiletter control sequences out of 15000+600000
+ 3598 strings out of 480129
+ 56235 string characters out of 5893409
+ 348062 words of memory out of 5000000
+ 21525 multiletter control sequences out of 15000+600000
  478846 words of font info for 63 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 55i,13n,62p,1443b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/symbols/msbm10.pfb>
-Output written on er_dmd.pdf (21 pages, 816049 bytes).
+ 55i,13n,62p,1434b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb>
+Output written on er_dmd.pdf (22 pages, 824965 bytes).
 PDF statistics:
- 413 PDF objects out of 1000 (max. 8388607)
- 294 compressed objects within 3 object streams
+ 416 PDF objects out of 1000 (max. 8388607)
+ 296 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
