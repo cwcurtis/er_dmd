@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  25 MAR 2024 09:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.28)  29 MAR 2024 09:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -447,11 +447,7 @@ runsystem(echo "auto-pst-pdf: Auxiliary LaTeX compilation")...executed.
 
 runsystem(echo "-------------------------------------------------")...executed.
 
-runsystem(rm -- "square_games-autopp.log")...executed.
-
-runsystem(rm -- "square_games-autopp.dvi")...executed.
-
-runsystem(rm -- "square_games-autopp.ps")...executed.
+runsystem(rm -- "square_games-pics.pdf")...executed.
 
 runsystem(latex -no-shell-escape -jobname="square_games-autopp" -interaction=ba
 tchmode  "\let \APPmakepictures \empty \input  square_games.tex")...executed.
@@ -573,13 +569,13 @@ or `english'. on input line 8.
 
 Preview: Fontsize 10pt
 Preview: PDFoutput 1
-<square_games-pics.pdf, id=2, page=1, 459.7175pt x 496.85625pt>
+<square_games-pics.pdf, id=2, page=1, 455.7025pt x 413.545pt>
 File: square_games-pics.pdf Graphic file (type pdf)
 <use square_games-pics.pdf, page 1>
 Package pdftex.def Info: square_games-pics.pdf , page1 used on input line 10.
-(pdftex.def)             Requested size: 459.71637pt x 496.85503pt.
+(pdftex.def)             Requested size: 455.70137pt x 413.54398pt.
 
-Overfull \hbox (129.71637pt too wide) in paragraph at lines 10--66
+Overfull \hbox (125.70137pt too wide) in paragraph at lines 10--66
 [][] 
  []
 
@@ -615,16 +611,16 @@ Non-PDF special ignored!
 Here is how much of TeX's memory you used:
  15814 strings out of 480129
  332289 string characters out of 5893409
- 635118 words of memory out of 5000000
+ 635109 words of memory out of 5000000
  33546 multiletter control sequences out of 15000+600000
  469259 words of font info for 28 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  116i,5n,119p,703b,513s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on square_games.pdf (1 page, 14601 bytes).
+Output written on square_games.pdf (1 page, 10729 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 49 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

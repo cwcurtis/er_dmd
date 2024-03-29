@@ -171,24 +171,40 @@ where $H()$ measures the entropy of a random variable and $I(,)$ is the mutual i
 \begin{equation}
 I(X,Y) = H(X) - H(X|Y).  
 \end{equation}
-Thus the transfer entropy $I(Y_{j+1},X_{j}|Y_{j})$ measures the conditional mutual information with conditioning over $Y_{j}$.  Note, if $Y_{j+1}$ is independent of $X_{j}$, then $I(Y_{j+1},Y_{j}|X_{j}) = I(Y_{j+1},Y_{j})$ so that $T_{X\rightarrow Y}(j) = 0$.  
+Thus the transfer entropy $I(Y_{j+1},X_{j}|Y_{j})$ measures the conditional mutual information with conditioning over $Y_{j}$.  Note, if $Y_{j+1}$ is independent of $X_{j}$, then $H(Y_{j+1}|Y_{j},X_{j}) = H(Y_{j+1}|Y_{j})$ so that $T_{X\rightarrow Y}(j) = 0$.  This initial concept of transfer entropy has given rise to a host of modifications and improvements, the most relevant for our purposes being that of {\it causation entropy} \cite{bollt} and {\it entropic regression} (ER) \cite{bollt2}.  Causation entropy provides a natural extension of transfer entropy to networks in which a central question is the determination of information flow between network nodes.  Central to its computation over a netowrk is the separation of the algorithm, after some INITIALIZE phase, into a BUILD and PRUNE phase.  The PRUNE phase in particular removes nodes which would otherwise provide false-positive connections for information flow in the network, thereby providing a critical mechanism for developing accurate pictures of information flow among several processes.  
 
-This initial concept of transfer entropy has given rise to a host of modifications and improvements, see in particular \cite{faes} and \cite{bollt}, which has ultimately lead to sophisticated software libraries being developed which can determine networks of interactions between time series that accurately account for confounding variables and non-Markovian influences of past states.  
-
+Building on this three stage methodology, ER develops models of time series from dictionaries of basis functions, say $\left\{\mathbf{\phi}_{l}\right\}_{l}^{N_{m}}$.  This happens as well in a INITIALIZE, BUILD, and then PRUNE phase.  After choosing some reasonable intial basis function and correspdonding model, The BUILD phase is done by fixing a state, say ${\bf Y}_{s}$, which is modelled by the current model, say ${\bf M}_{c}$, and a test model, say ${\bf M}^{(j)}_{t}$, where ${\bf M}^{(j)}_{t}$ differs from ${\bf M}_{c}$ through the inclusion of a basis function, say $\mathbf{\phi}_{j}$, not already used in constructing ${\bf M}_{c}$.  We then find a potential model update by computing
+\[
+\tilde{I} = \text{argmax}_{j}I\left(\left.{\bf Y}_{s}, {\bf M}_{t}^{(j)}\right| {\bf M}_{c}\right),
+\]
+so that, if $\tilde{I}>0$ in a stastically significant sense, we choose those model updates which most increase the degree of information that one model provides over another regards to a state ${\bf Y}_{s}$.  Once we have exhausted the family of basis functions, ER commences the PRUNE phase, in which for the current model ${\bf M}_{c}$ we generate ${\bf M}_{t}^{(j)}$ by removing basis functions, say $\phi_{j}$, from ${\bf M}_{c}$, and then compute 
+\[
+\tilde{i} = \text{argmin}_{j}I\left(\left.{\bf Y}_{s}, {\bf M}_{t}^{(j)}\right| {\bf M}_{c}\right),
+\]
+so that if $\tilde{i}=0$ in a statistically significant way, then we reduce ${\bf M}_{c}$ to the chosen ${\bf M}_{t}^{(j)}$.  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Entropic-Regression-Dynamic-Mode Decomposition}
-
-Thus, we can see how the ER approach can be used to enhance the  HODMD.  We again suppose that the time dynamics is modeled with at most $d-$lags as in Equations \eqref{basic_model} and \eqref{iterator}.  To choose the appropriate lags in HODMD, we adapt the method of {\it entropic-regression} from \cite{bollt2}.  There are three stages to the method, which are 
+To augment the HODMD method, we now merge it with ER.  To do this, fixing some maximum choice of lag $d$, we take as our desired state ${\bf Y}_{s}\equiv {\bf Y}_{d}^{+}$.  Assuming some already chosen set of lags, say $l_{c}$, we can add to $l_{c}$ some not already chosen lag , say $l_{j}$, to generate the set of test lags $l_{t}$.  We can then use HODMD to generate a given model ${\bf M}_{c}\equiv {\bf K}(l_{c}){\bf Y}(l_{t})$ and a proposed model ${\bf M}_{t}^{(j)}\equiv {\bf K}(l_{t}){\bf Y}(l_{t})$.  Following then the ER framework, there are three stages to our ERDMD method, which are 
 \begin{enumerate}
 \item {\bf INITIALIZE}: We initialize our choice of lags $l_{c}=\left\{1\right\}$ and corresponding HODMD matrix ${\bf K}_{1}$ which is found via the typical DMD method.    
-\item {\bf BUILD}: We then further build these lists through finding those laged models, say ${\bf M}^{(j)}_{prp}\equiv {\bf K}(l_{t}){\bf Y}_{-}(l_{t})$ which provide the most information relative to the prior choice of laged model, say ${\bf M}_{gvn}\equiv {\bf K}(l_{c}){\bf Y}_{-}(l_{t})$, i.e. we find $\text{argmax}_{j}I\left({\bf Y}^{+}_{d},{\bf K}(l_{t}){\bf Y}_{-}(l_{t})|{\bf K}(l_{c}){\bf Y}_{-}(l_{t})\right)$.  If this value is larger than zero in a statistically significant way (measured through shuffle testing), then the model is updated to the corresponding model ${\bf M}^{(j)}_{prp}$; see Figure \ref{fig:build_stage} for an illustration of this process.    
-\item {\bf PRUNE}: We finally prune by testing whether each chosen lag is necessary relative to the other choices we have made during the build phase.  Thus, for a given model ${\bf M}_{gvn}\equiv {\bf K}(l_{c}){\bf Y}_{-}(l_{t})$, we generate ${\bf M}^{(j)}_{prp}\equiv {\bf K}(l_{c}\backslash l_{j}){\bf Y}_{-}(l_{t})$ and then find $\text{argmin}_{j}I\left({\bf Y}^{+}_{d},{\bf M}^{(j)}_{prp}|{\bf M}_{gvn}\right)$.  If this value is close to zero in a statistically significant way (measured through shuffle testing), then model is updated to the corresponding ${\bf M}^{(j)}_{prp}$.  
+\item {\bf BUILD}: Given some choice of lags $l_{c}$, we then look at the proposed list $l_{t}=l_{c}\cup \left\{l_{j}\right\}$ and then find those laged models, say ${\bf M}^{(j)}_{t}\equiv {\bf K}(l_{t}){\bf Y}_{-}(l_{t})$ which provide the most information relative to the prior choice of laged model, say ${\bf M}_{c}\equiv {\bf K}(l_{c}){\bf Y}_{-}(l_{t})$, i.e. we find 
+\begin{equation}
+\tilde{I} = \text{argmax}_{j}I\left(\left.{\bf Y}^{+}_{d},{\bf K}(l_{t}){\bf Y}_{-}(l_{t})\right|{\bf K}(l_{c}){\bf Y}_{-}(l_{t})\right).  
+\label{build_eqn}
+\end{equation}
+If this value is larger than zero in a statistically significant way (measured through shuffle testing), then the model is updated to the corresponding model ${\bf M}^{(j)}_{t}$; see Figure \ref{fig:build_stage} for an illustration of this process.    
+\item {\bf PRUNE}: We finally prune by testing whether each chosen lag is necessary relative to the other choices we have made during the build phase.  Thus, for a given model ${\bf M}_{c}\equiv {\bf K}(l_{c}){\bf Y}_{-}(l_{t})$, we generate ${\bf M}^{(j)}_{t}\equiv {\bf K}(l_{c}\backslash l_{j}){\bf Y}_{-}(l_{t})$ and then find 
+\begin{equation}
+\tilde{i} = \text{argmin}_{j}I\left(\left.{\bf Y}^{+}_{d},{\bf M}^{(j)}_{t}\right|{\bf M}_{c}\right).  
+\label{prune_eqn}
+\end{equation}
+If this value is close to zero in a statistically significant way (measured through shuffle testing), then model is updated to the corresponding ${\bf M}^{(j)}_{t}$.  
 \end{enumerate}
 \begin{figure}
 \centering
 \includegraphics[scale=.75]{square_games-pics}
 %\includegraphics[scale=.75]{square_games}
-\caption{The BUILD stage of the ERDMD algorithm.  Here, we start from the given model ${\bf M}_{gvn}$ which represents the choice of lags $(1, \cdots, l_{k})$ with correspondig matrices $({\bf K}_{1}, \cdots, {\bf K}_{l_{k}})$, and we then find a proposed model ${\bf M}^{(j)}_{prp}$ which maximizes $I({\bf y}^{+}, {\bf M}^{(j)}_{prp}|{\bf M}_{gvn})$, or the information gain in using the proposed model relative to the given model to anticipate the next time steps represented by ${\bf y}^{(+)}$.}  
+\caption{The BUILD stage of the ERDMD algorithm.  Here, we start from the given model ${\bf M}_{c}$ which represents the choice of lags $(1, \cdots, l_{k})$ with correspondig matrices $({\bf K}_{1}, \cdots, {\bf K}_{l_{k}})$, and we then find a proposed model ${\bf M}^{(j)}_{t}$ which maximizes $I\left(\left.{\bf y}^{+}, {\bf M}^{(j)}_{t}\right|{\bf M}_{c}\right)$, or the information gain in using the proposed model relative to the given model to anticipate the next time steps represented by ${\bf y}^{(+)}$.}  
 \label{fig:build_stage}
 \end{figure}
 Note, we always have $1\in l_{c}$ since this makes all subsequent lags improvements on the basic DMD approach.  This process is formalized and detailed in Algorithm \ref{erdmd}.  
