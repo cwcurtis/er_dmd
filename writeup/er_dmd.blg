@@ -3,44 +3,49 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: er_dmd.aux
 The style file: unsrt.bst
 Database file #1: ionosphere_bib.bib
-You've used 21 entries,
+Repeated entry---line 348 of file ionosphere_bib.bib
+ : @article{faes
+ :              ,
+I'm skipping whatever remains of this entry
+You've used 23 entries,
             1791 wiz_defined-function locations,
-            580 strings with 6824 characters,
-and the built_in function-call counts, 5119 in all, are:
-= -- 444
-> -- 247
+            591 strings with 7238 characters,
+and the built_in function-call counts, 5597 in all, are:
+= -- 480
+> -- 276
 < -- 2
-+ -- 90
-- -- 69
-* -- 401
-:= -- 839
-add.period$ -- 64
-call.type$ -- 21
-change.case$ -- 19
++ -- 100
+- -- 77
+* -- 440
+:= -- 920
+add.period$ -- 70
+call.type$ -- 23
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 203
-empty$ -- 487
-format.name$ -- 69
-if$ -- 1113
+cite$ -- 23
+duplicate$ -- 221
+empty$ -- 532
+format.name$ -- 77
+if$ -- 1218
 int.to.chr$ -- 0
-int.to.str$ -- 21
-missing$ -- 23
-newline$ -- 108
-num.names$ -- 23
-pop$ -- 34
+int.to.str$ -- 23
+missing$ -- 25
+newline$ -- 118
+num.names$ -- 25
+pop$ -- 36
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 78
+skip$ -- 86
 stack$ -- 0
-substring$ -- 401
-swap$ -- 33
+substring$ -- 433
+swap$ -- 35
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 48
-width$ -- 23
-write$ -- 235
+while$ -- 51
+width$ -- 25
+write$ -- 257
+(There was 1 error message)

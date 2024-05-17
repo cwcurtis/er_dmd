@@ -77,10 +77,29 @@ Jie Sun, Dane Taylor, and Erik~M. Bollt.
 \newblock Causal network inference by optimal causation entropy.
 \newblock {\em SIAM Journal on Applied Dynamical Systems}, 14(1):73--106, 2015.
 
-\bibitem{aikake}
-Akaike Hirotogu.
-\newblock A new look at the statistical model identification.
-\newblock {\em IEEE Transactions on Automatic Control}, 19:716--723, 1974.
+\bibitem{idtxl2}
+Leonardo Novelli, Patricia Wollstadt, Pedro Mediano, Michael Wibral, and
+  Joseph~T. Lizier.
+\newblock {Large-scale directed network inference with multivariate transfer
+  entropy and hierarchical statistical testing}.
+\newblock {\em Network Neuroscience}, 3(3):827--847, 2019.
+
+\bibitem{lozano}
+Adri\'{a}n Loz\'{a}no-Duran and Gonzalo Arranz.
+\newblock Information-theoretic formulation of dynamical systems: {C}ausality,
+  modeling, and control.
+\newblock {\em Phys. Rev. Research}, 4:023195, 2022.
+
+\bibitem{vlachos}
+Ioannis Vlachos and Dimitris Kugiumtzis.
+\newblock Nonuniform state-space reconstruction and coupling detection.
+\newblock {\em Phys. Rev. E}, 82:016207, 2010.
+
+\bibitem{faes}
+Luca Faes, Giandomenico Nollo, and Alberto Porta.
+\newblock Information-based detection of nonlinear granger causality in
+  multivariate processes via a nonuniform embedding technique.
+\newblock {\em Phys. Rev. E}, 83:051112, May 2011.
 
 \bibitem{brunton_havok}
 S.L. Brunton, B.W. Brunton, J.L. Proctor, , E.~Kaiser, and J.N. Kutz.
@@ -92,12 +111,6 @@ C.~W.~J. Granger.
 \newblock Investigating causal relations by econometric models and
   cross-spectral methods.
 \newblock {\em Econometrica}, 37(3):424--438, 1969.
-
-\bibitem{faes}
-Luca Faes, Giandomenico Nollo, and Alberto Porta.
-\newblock Information-based detection of nonlinear granger causality in
-  multivariate processes via a nonuniform embedding technique.
-\newblock {\em Phys. Rev. E}, 83:051112, May 2011.
 
 \bibitem{robinson}
 J.C. Robinson.
