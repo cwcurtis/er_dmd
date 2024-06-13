@@ -1,0 +1,116 @@
+\relax 
+\citation{clainche}
+\citation{bollt}
+\citation{bollt2}
+\citation{taira}
+\citation{lusch}
+\citation{azencot}
+\citation{lago_dldmd}
+\citation{arbabi}
+\citation{clainche}
+\citation{duraisamy}
+\citation{champion2}
+\citation{kutz4}
+\citation{curtis_dldmd}
+\citation{duraisamy}
+\citation{arbabi}
+\citation{curtis_dldmd}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{}\protected@file@percent }
+\citation{bollt2}
+\citation{schreiber}
+\citation{bollt}
+\citation{bollt2}
+\citation{idtxl2}
+\citation{lozano}
+\citation{vlachos}
+\citation{faes}
+\citation{arbabi}
+\citation{curtis_dldmd}
+\citation{curtis_dldmd}
+\citation{bollt2}
+\citation{clainche}
+\citation{bollt}
+\citation{bollt2}
+\citation{clainche}
+\citation{brunton_havok}
+\citation{arbabi}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Entropic Regression DMD}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Higher-Order DMD}{3}{}\protected@file@percent }
+\newlabel{basic_model}{{1}{3}}
+\citation{clainche}
+\newlabel{iterator}{{2}{4}}
+\newlabel{full_matrix}{{3}{4}}
+\newlabel{characpoly}{{4}{4}}
+\citation{granger}
+\citation{schreiber}
+\citation{schreiber}
+\citation{bollt}
+\citation{bollt2}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Determining Information Flow and Model Discovery through Entropic Regression}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Entropic-Regression-Dynamic-Mode Decomposition}{6}{}\protected@file@percent }
+\newlabel{build_eqn}{{8}{6}}
+\newlabel{prune_eqn}{{9}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The BUILD stage of the ERDMD algorithm. Here, we start from the given model ${\bf  M}_{c}$ which represents the choice of lags $(1, \cdots  , l_{k})$ with correspondig matrices $({\bf  K}_{1}, \cdots  , {\bf  K}_{l_{k}})$, and we then find a proposed model ${\bf  M}^{(j)}_{t}$ which maximizes $I\left (\left .{\bf  y}^{+}, {\bf  M}^{(j)}_{t}\right |{\bf  M}_{c}\right )$, or the information gain in using the proposed model relative to the given model to anticipate the next time steps represented by ${\bf  y}^{(+)}$.}}{7}{}\protected@file@percent }
+\newlabel{fig:build_stage}{{1}{7}}
+\citation{curtis_dldmd}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Lorenz-63}{8}{}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces ERDMD Method}}{9}{}\protected@file@percent }
+\newlabel{erdmd}{{1}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Direct comparison of ERDMD and all lags HODMD model against the true trajectory for the Lorenz-63 system (a), and error across dimensions for the ERDMD and all lags HODMD method (b). The black line indicates the ERDMD result while the red indicates the all lags HODMD result. The solid vertial bar indicates the maximum lag choice of $d=150$, while the dashed line indicates the end of the reconstruction interval and the beginning of the forecasting regime. The ERDMD algorithm converges to $l_{c}=\left \{1,149\right \}$.}}{10}{}\protected@file@percent }
+\newlabel{fig:lorenz_compare_d_150}{{2}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Comparison of the HODMD lagged matrix norms (black dots) and the ERDMD model (red dots) for the Lorenz-63 system with $d=150$.}}{11}{}\protected@file@percent }
+\newlabel{fig:model_comp_d_150}{{3}{11}}
+\citation{duraisamy}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Spectrum of corresponding ERDMD Koopman operator for Lorenz-63 with $d=150$ on the left side, with a detail comparison to the roots of $\tilde  {p}_{in, a}(z)$ (blue crosses) on the right side near (1,0). The ERDMD algorithm converges to $l_{c}=\left \{1,149\right \}$. The solid/red line is the unit circle, provided for reference.}}{12}{}\protected@file@percent }
+\newlabel{fig:lorenz_spectrum_d_150}{{4}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Comparison of ERDMD and all lags HODMD model against true trajectory for Lorenz-63 system. The ERDMD reconstruction is in solid black in the figure. The vertial bar indicates the maximum lag choice of $d=100$. The ERDMD algorithm converges to $l_{c}=\left \{1,15, 26, 35, 45, 48, 68, 73, 97,99\right \}$.}}{13}{}\protected@file@percent }
+\newlabel{fig:lorenz_compare_d_100}{{5}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Comparison of the HODMD lagged matrix norms (black dots) and the ERDMD model (red dots) for the Lorenz-63 system with $d=100$.}}{13}{}\protected@file@percent }
+\newlabel{fig:model_comp_d_99}{{6}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Spectrum of corresponding ERDMD Koopman operator for Lorenz-63 for $d=100$ on the left side, with a detail comparison to the reduced approximation (blue crosses) on the right side near (1,0). The ERDMD algorithm converges to $l_{c}=\left \{1,15, 26, 35, 45, 48, 68, 73, 97,99\right \}$. The solid/red line is the unit circle, provided for comparison.}}{14}{}\protected@file@percent }
+\newlabel{fig:lorenz_spectrum_d_100}{{7}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Comparison of ERDMD and all lags HODMD model against true trajectory for the Rossler system. The ERDMD reconstruction is in solid black in the figure. The vertial bar indicates the maximum lag choice of $d=1000$. The ERDMD algorithm converges to $l_{c}=\left \{1, 3, 170, 436, 553, 665, 988\right \}$.}}{16}{}\protected@file@percent }
+\newlabel{fig:rossler}{{8}{16}}
+\citation{robinson}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Comparison of the HODMD lagged matrix norms (black dots) and the ERDMD model (red dots) for the Rossler system.}}{17}{}\protected@file@percent }
+\newlabel{fig:model_comp_d_988}{{9}{17}}
+\citation{citanovic}
+\citation{kassam}
+\citation{berkooz}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Spectrum of the corresponding ERDMD Koopman operator for the Rossler system on the left side, with a detail comparison to the roots of $\tilde  {p}_{in,a}(z)$ (blue crosses) and $\tilde  {p}_{out,a}(z)$ (green crosses) on the right side near (1,0). The ERDMD algorithm converges to $l_{c}= \left \{1, 3, 170, 436, 553, 665, 988\right \}$. The solid/red line is the unit circle, provided for comparison.}}{18}{}\protected@file@percent }
+\newlabel{fig:rossler_spectrum}{{10}{18}}
+\citation{curtis_dldmd}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Comparison of ERDMD and all lags HODMD model against true trajectory for the KS equation. The vertial bar indicates the maximum lag choice of $d=200$. The ERDMD algorithm converges to $l_{c}=\left \{1, 123, 141, 158\right \}$.}}{20}{}\protected@file@percent }
+\newlabel{fig:ks_compare_d_200}{{11}{20}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{20}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Comparison of the HODMD lagged matrix norms (black dots) and the ERDMD model (red dots) for the Kuramoto--Sivashinsky system.}}{21}{}\protected@file@percent }
+\newlabel{fig:model_comp_d_200}{{12}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Spectrum of the corresponding ERDMD Koopman operator for the Kuramoto--Sivashinsky system on the left side, with a detail comparison to the roots of $\tilde  {p}_{in,a}(z)$ (blue crosses) and $\tilde  {p}_{out,a}(z)$ (green crosses) on the right side near (1,0). The ERDMD algorithm converges to $l_{c}=\left \{1, 123, 141, 158\right \}$. The solid/red line is the unit circle, which is provided for reference.}}{21}{}\protected@file@percent }
+\newlabel{fig:ksspectrum}{{13}{21}}
+\bibstyle{unsrt}
+\bibdata{ionosphere_bib}
+\bibcite{clainche}{1}
+\bibcite{bollt}{2}
+\bibcite{bollt2}{3}
+\bibcite{taira}{4}
+\bibcite{lusch}{5}
+\bibcite{azencot}{6}
+\bibcite{lago_dldmd}{7}
+\bibcite{arbabi}{8}
+\bibcite{duraisamy}{9}
+\bibcite{champion2}{10}
+\bibcite{kutz4}{11}
+\bibcite{curtis_dldmd}{12}
+\bibcite{schreiber}{13}
+\bibcite{idtxl2}{14}
+\bibcite{lozano}{15}
+\bibcite{vlachos}{16}
+\bibcite{faes}{17}
+\bibcite{brunton_havok}{18}
+\bibcite{granger}{19}
+\bibcite{robinson}{20}
+\bibcite{citanovic}{21}
+\bibcite{kassam}{22}
+\bibcite{berkooz}{23}
+\gdef \@abspage@last{24}
