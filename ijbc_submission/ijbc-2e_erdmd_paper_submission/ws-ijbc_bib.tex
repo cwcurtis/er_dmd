@@ -1,0 +1,71 @@
+\documentclass{ws-ijbc}
+\def\bib{B\kern-.05em{I}\kern-.025em{B}\kern-.08em}
+\def\btex{B\kern-.05em{I}\kern-.025em{B}\kern-.08em\TeX}
+\begin{document}
+\catchline{}{}{}{}{} % Publisher's Area please ignore
+\markboth{WSPC}{Using World Scientific's \btex\/ Style File}
+
+\title{{\btex}ing in IJBC {\bib}Style}
+
+\maketitle
+
+\section{Usage}
+
+\begin{verbatim}
+\documentclass{ws-ijbc}
+\begin{document}
+Sample output using ws-ijbc bibliography style file ...
+...text.\cite{best,pier,jame} ...
+\bibliographystyle{ws-ijbc}
+\bibliography{sample}
+\end{document}
+\end{verbatim}
+
+\section{\btex{} Database Entries}
+
+\begin{center}
+\tablefont
+\begin{tabular}{@{}ll@{}}\toprule
+\multicolumn{1}{c}{\btex}\\
+\multicolumn{1}{c}{Database}  & \multicolumn{1}{c}{Sample citation}\\
+\multicolumn{1}{c}{entry type}\\\colrule
+
+article & ... \citep{best03,pier02,jame02}\\
+
+proceedings & ... \cite{weis94}\\
+
+inproceedings & ... \cite{gupt97}\\
+
+book & ... \citep{jarl88,rich60}\\
+
+booklet & ... \cite{bill91}\\
+
+edition & ... \cite{chur90}\\
+
+editor & ... \cite{benh93}\\
+
+series & ... \cite{bake72}\\
+
+tech report & ... \citep{hobb92,bria84}\\
+
+phd thesis & ... \cite{brow88}\\
+
+masters thesis & ... \cite{lodh74}\\
+
+incollection & ... \cite{dani73}\\
+
+misc & ... \citep{davi93,rene96}\\
+\botrule
+\end{tabular}
+\end{center}
+
+Some more options:
+
+\verb|\cite{best03}| $=>$ \cite{best03}
+
+\verb|\citet{best03}| $=>$ \citet{best03}
+
+\bibliographystyle{ws-ijbc}
+\bibliography{sample}
+
+\end{document} 

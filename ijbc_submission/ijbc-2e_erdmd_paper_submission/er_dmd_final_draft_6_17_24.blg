@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: er_dmd_final_draft_6_17_24.aux
+The style file: ws-ijbc.bst
+Database file #1: ionosphere_bib.bib
+<ws-ijbc.bst>
+World Scientific's Bibliography Style File for IJBC
+version 1.0 (2005/03/26), Sorted
+for support: Rajesh, rajesh@wspc.com.sg
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 23 entries,
+            3241 wiz_defined-function locations,
+            814 strings with 8647 characters,
+and the built_in function-call counts, 17217 in all, are:
+= -- 1490
+> -- 646
+< -- 30
++ -- 248
+- -- 225
+* -- 1290
+:= -- 2432
+add.period$ -- 44
+call.type$ -- 23
+change.case$ -- 188
+chr.to.int$ -- 23
+cite$ -- 23
+duplicate$ -- 1321
+empty$ -- 1257
+format.name$ -- 300
+if$ -- 3629
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 240
+newline$ -- 79
+num.names$ -- 92
+pop$ -- 476
+preamble$ -- 1
+purify$ -- 167
+quote$ -- 0
+skip$ -- 664
+stack$ -- 0
+substring$ -- 891
+swap$ -- 833
+text.length$ -- 21
+text.prefix$ -- 0
+top$ -- 4
+type$ -- 201
+warning$ -- 0
+while$ -- 116
+width$ -- 0
+write$ -- 261

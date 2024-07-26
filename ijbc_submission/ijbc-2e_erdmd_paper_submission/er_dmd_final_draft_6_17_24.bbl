@@ -1,0 +1,134 @@
+\begin{thebibliography}{23}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Alford-Lago \emph{et~al.}(2022)Alford-Lago, Curtis, Ihler \&
+  Issan}]{lago_dldmd}
+Alford-Lago, D.~J., Curtis, C.~W., Ihler, A.~T. \& Issan, O. [2022]
+  \enquote{Deep learning enhanced dynamic mode decomposition,} \emph{Chaos}
+  \textbf{32},  033116.
+
+\bibitem[{AlMomani \emph{et~al.}(2020)AlMomani, Sun \& Bollt}]{bollt2}
+AlMomani, A. A.~R., Sun, J. \& Bollt, E.~M. [2020] \enquote{How entropic
+  regression beats the outliers problem in nonlinear system identification,}
+  \emph{Chaos} \textbf{30},  013107.
+
+\bibitem[{Arbabi \& Mezic(2017)}]{arbabi}
+Arbabi, H. \& Mezic, I. [2017] \enquote{Ergodic theory, dynamic mode
+  decomposition, and computation of spectral properties of the {K}oopman
+  operator,} \emph{SIAM J. Appl. Dyn. Syst.} \textbf{16},  2096--2126.
+
+\bibitem[{Azencot \emph{et~al.}(2020)Azencot, Erichson, Lin \&
+  Mahoney}]{azencot}
+Azencot, O., Erichson, N.~B., Lin, V. \& Mahoney, M. [2020]
+  \enquote{Forecasting sequential data using consistent {K}oopman
+  autoencoders,}  \emph{Proceedings of the 37th International Conference on
+  Machine Learning} (PMLR), pp. 475--485.
+
+\bibitem[{Berkooz \emph{et~al.}(2012)Berkooz, Holmes, Lumley \&
+  Rowley}]{berkooz}
+Berkooz, G., Holmes, P., Lumley, J. \& Rowley, C. [2012] \emph{Turbulence,
+  Coherent Structures, Dynamical Systems, and Symmetry} (Cambridge University
+  Press, Cambridge, UK).
+
+\bibitem[{Brunton \emph{et~al.}(2017)Brunton, Brunton, Proctor, , Kaiser \&
+  Kutz}]{brunton_havok}
+Brunton, S., Brunton, B., Proctor, J., , Kaiser, E. \& Kutz, J. [2017]
+  \enquote{Chaos as an intermittently forced linear system,} \emph{Nature
+  Comm.} \textbf{8},  19.
+
+\bibitem[{Budanur \emph{et~al.}(2015)Budanur, Cvitanovi\ifmmode~\acute{c}\else
+  \'{c}\fi{}, Davidchack \& Siminos}]{citanovic}
+Budanur, N.~B., Cvitanovi\ifmmode~\acute{c}\else \'{c}\fi{}, P., Davidchack,
+  R.~L. \& Siminos, E. [2015] \enquote{Reduction of so(2) symmetry for
+  spatially extended dynamical systems,} \emph{Phys. Rev. Lett.} \textbf{114},
+  084102.
+
+\bibitem[{Champion \emph{et~al.}(2019)Champion, Brunton \& Kutz}]{champion2}
+Champion, K.~P., Brunton, S.~L. \& Kutz, J.~N. [2019] \enquote{Discovery of
+  nonlinear multiscale systems: Sampling strategies and embeddings,} \emph{SIAM
+  J. Appl. Dyn. Syst.} \textbf{18},  312--333.
+
+\bibitem[{Curtis \emph{et~al.}(2023)Curtis, Jay Alford-Lago, Bollt \&
+  Tuma}]{curtis_dldmd}
+Curtis, C.~W., Jay Alford-Lago, D., Bollt, E. \& Tuma, A. [2023]
+  \enquote{{Machine learning enhanced Hankel dynamic-mode decomposition},}
+  \emph{Chaos} \textbf{33},  083133.
+
+\bibitem[{Faes \emph{et~al.}(2011)Faes, Nollo \& Porta}]{faes}
+Faes, L., Nollo, G. \& Porta, A. [2011] \enquote{Information-based detection of
+  nonlinear granger causality in multivariate processes via a nonuniform
+  embedding technique,} \emph{Phys. Rev. E} \textbf{83},  051112.
+
+\bibitem[{Granger(1969)}]{granger}
+Granger, C. W.~J. [1969] \enquote{Investigating causal relations by econometric
+  models and cross-spectral methods,} \emph{Econometrica} \textbf{37},
+  424--438.
+
+\bibitem[{Kamb \emph{et~al.}(2020)Kamb, Kaiser, Brunton \& Kutz}]{kutz4}
+Kamb, M., Kaiser, E., Brunton, S.~L. \& Kutz, J.~N. [2020] \enquote{Time-delay
+  observables for {K}oopman: Theory and applications,} \emph{SIAM J. Appl. Dyn.
+  Syst.} \textbf{19},  886--917.
+
+\bibitem[{Kassam \& Trefethen(2005)}]{kassam}
+Kassam, A.-K. \& Trefethen, L.~N. [2005] \enquote{Fourth-order time-stepping
+  for stiff pdes,} \emph{SIAM J. Sci. Comp.} \textbf{26},  1214--1233.
+
+\bibitem[{Le~Clainche \& Vega(2017)}]{clainche}
+Le~Clainche, S. \& Vega, J.~M. [2017] \enquote{Higher order dynamic mode
+  decomposition,} \emph{SIAM J. Appl. Dyn. Syst.} \textbf{16},  882--925.
+
+\bibitem[{Loz\'{a}no-Duran \& Arranz(2022)}]{lozano}
+Loz\'{a}no-Duran, A. \& Arranz, G. [2022] \enquote{Information-theoretic
+  formulation of dynamical systems: {C}ausality, modeling, and control,}
+  \emph{Phys. Rev. Research} \textbf{4},  023195.
+
+\bibitem[{Lusch \emph{et~al.}(2018)Lusch, Kutz \& Brunton}]{lusch}
+Lusch, B., Kutz, J.~N. \& Brunton, S.~L. [2018] \enquote{Deep learning for
+  universal linear embeddings of nonlinear dynamics,} \emph{Nature Comm.}
+  \textbf{9},  4950.
+
+\bibitem[{Novelli \emph{et~al.}(2019)Novelli, Wollstadt, Mediano, Wibral \&
+  Lizier}]{idtxl2}
+Novelli, L., Wollstadt, P., Mediano, P., Wibral, M. \& Lizier, J.~T. [2019]
+  \enquote{{Large-scale directed network inference with multivariate transfer
+  entropy and hierarchical statistical testing},} \emph{Netw. Neurosci.}
+  \textbf{3},  827--847.
+
+\bibitem[{Pan \& Duraisamy(2020)}]{duraisamy}
+Pan, S. \& Duraisamy, K. [2020] \enquote{{On the structure of time-delay
+  embedding in linear models of non-linear dynamical systems},} \emph{Chaos}
+  \textbf{30},  073135.
+
+\bibitem[{Robinson(2001)}]{robinson}
+Robinson, J. [2001] \emph{Infinite Dimensional Dynamical Systems} (Cambridge
+  University Press, Cambridge, UK).
+
+\bibitem[{Schreiber(2000)}]{schreiber}
+Schreiber, T. [2000] \enquote{Measuring information transfer,} \emph{Phys. Rev.
+  Lett.} \textbf{85},  461--464.
+
+\bibitem[{Sun \emph{et~al.}(2015)Sun, Taylor \& Bollt}]{bollt}
+Sun, J., Taylor, D. \& Bollt, E.~M. [2015] \enquote{Causal network inference by
+  optimal causation entropy,} \emph{SIAM J. Appl. Dyn. Syst.} \textbf{14},
+  73--106.
+
+\bibitem[{Taira \emph{et~al.}(2017)Taira, Brunton, Dawson, Rowley, Colonius,
+  McKeon, Schmidt, Gordeyev, Theofilis \& Ukeiley}]{taira}
+Taira, K., Brunton, S., Dawson, S., Rowley, C., Colonius, T., McKeon, B.,
+  Schmidt, O., Gordeyev, S., Theofilis, V. \& Ukeiley, L. [2017] \enquote{Modal
+  analysis of fluid flows: An overview,} \emph{AIAA Journal} \textbf{55},
+  4013--4041.
+
+\bibitem[{Vlachos \& Kugiumtzis(2010)}]{vlachos}
+Vlachos, I. \& Kugiumtzis, D. [2010] \enquote{Nonuniform state-space
+  reconstruction and coupling detection,} \emph{Phys. Rev. E} \textbf{82},
+  016207.
+
+\end{thebibliography}
